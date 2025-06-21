@@ -1,0 +1,42 @@
+[0.030s] Invoking command in '/home/naveen/bat_robot/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_description -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/arduinobot_description
+[0.274s] -- The C compiler identification is GNU 11.4.0
+[0.467s] -- The CXX compiler identification is GNU 11.4.0
+[0.490s] -- Detecting C compiler ABI info
+[0.662s] -- Detecting C compiler ABI info - done
+[0.690s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.692s] -- Detecting C compile features
+[0.696s] -- Detecting C compile features - done
+[0.714s] -- Detecting CXX compiler ABI info
+[1.058s] -- Detecting CXX compiler ABI info - done
+[1.086s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.088s] -- Detecting CXX compile features
+[1.090s] -- Detecting CXX compile features - done
+[1.105s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.582s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.922s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.208s] -- Added test 'lint_cmake' to check CMake code style
+[2.212s] -- Added test 'xmllint' to check XML markup files
+[2.219s] -- Configuring done
+[2.224s] -- Generating done
+[2.230s] -- Build files have been written to: /home/naveen/bat_robot/build/arduinobot_description
+[2.252s] Invoked command in '/home/naveen/bat_robot/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_description -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/arduinobot_description
+[2.255s] Invoking command in '/home/naveen/bat_robot/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/arduinobot_description -- -j2 -l2
+[2.348s] Invoked command in '/home/naveen/bat_robot/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/arduinobot_description -- -j2 -l2
+[2.373s] Invoking command in '/home/naveen/bat_robot/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/arduinobot_description
+[2.402s] -- Install configuration: ""
+[2.405s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+[2.407s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
+[2.410s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh
+[2.412s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv
+[2.412s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/path.sh
+[2.413s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/path.dsv
+[2.414s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.bash
+[2.416s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.sh
+[2.416s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.zsh
+[2.416s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.dsv
+[2.416s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/package.dsv
+[2.417s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description
+[2.418s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake
+[2.418s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake
+[2.419s] -- Installing: /home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/package.xml
+[2.423s] Invoked command in '/home/naveen/bat_robot/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/arduinobot_description

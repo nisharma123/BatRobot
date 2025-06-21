@@ -1,0 +1,4 @@
+source;share/batrobot_moveits/local_setup.bash
+source;share/batrobot_moveits/local_setup.dsv
+source;share/batrobot_moveits/local_setup.sh
+source;share/batrobot_moveits/local_setup.zsh

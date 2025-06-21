@@ -1,0 +1,20 @@
+[0.121s] Invoking command in '/home/naveen/bat_robot/build/batrobot_moveits': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveits -- -j2 -l2
+[0.518s] Invoked command in '/home/naveen/bat_robot/build/batrobot_moveits' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveits -- -j2 -l2
+[0.533s] Invoking command in '/home/naveen/bat_robot/build/batrobot_moveits': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_moveits
+[0.615s] -- Install configuration: ""
+[0.616s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/package_run_dependencies/batrobot_moveits
+[0.616s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/parent_prefix_path/batrobot_moveits
+[0.621s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/ament_prefix_path.sh
+[0.622s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/ament_prefix_path.dsv
+[0.625s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/path.sh
+[0.625s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/path.dsv
+[0.625s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.bash
+[0.626s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.sh
+[0.626s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.zsh
+[0.631s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.dsv
+[0.631s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/package.dsv
+[0.631s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/packages/batrobot_moveits
+[0.632s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/cmake/batrobot_moveitsConfig.cmake
+[0.632s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/cmake/batrobot_moveitsConfig-version.cmake
+[0.637s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/package.xml
+[0.745s] Invoked command in '/home/naveen/bat_robot/build/batrobot_moveits' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_moveits

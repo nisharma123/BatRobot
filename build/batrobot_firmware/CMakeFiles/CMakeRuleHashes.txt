@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+5bf5c6f85c6028eebdf636c854186e9f CMakeFiles/ament_cmake_python_build_batrobot_firmware_egg
+2b87244183895b8bc404256525691c7e CMakeFiles/ament_cmake_python_copy_batrobot_firmware
+57133dc7d13cace06cee867aec1808ec CMakeFiles/batrobot_firmware_uninstall

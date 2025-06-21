@@ -1,0 +1,22 @@
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual batrobot_controller::CallbackReturn batrobot_controller::BatrobotInterface::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:100:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  100 | CallbackReturn BatrobotInterface::on_activate([01;35m[Kconst rclcpp_lifecycle::State &previous_state[m[K)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual batrobot_controller::CallbackReturn batrobot_controller::BatrobotInterface::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:127:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  127 | CallbackReturn BatrobotInterface::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State &previous_state[m[K)
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type batrobot_controller::BatrobotInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:149:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  149 | hardware_interface::return_type BatrobotInterface::read([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:150:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  150 |                                                           [01;35m[Kconst rclcpp::Duration &period[m[K)
+      |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type batrobot_controller::BatrobotInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:157:78:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  157 | hardware_interface::return_type BatrobotInterface::write([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_controller/src/batrobot_interface.cpp:158:84:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  158 |                                                            [01;35m[Kconst rclcpp::Duration &period[m[K)
+      |                                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K

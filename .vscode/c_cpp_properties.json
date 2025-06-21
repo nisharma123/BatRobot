@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/naveen/roarm_ws_em0/install/ros2web_interfaces/include/**",
+        "/home/naveen/roarm_ws_em0/install/roarm_moveit/include/**",
+        "/home/naveen/roarm_ws_em0/install/moveit_servo/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/naveen/bat_robot/src/batrobot_description/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

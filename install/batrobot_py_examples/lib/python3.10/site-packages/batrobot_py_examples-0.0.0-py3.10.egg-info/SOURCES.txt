@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/PKG-INFO
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/SOURCES.txt
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/dependency_links.txt
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/entry_points.txt
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/requires.txt
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/top_level.txt
+../../build/batrobot_py_examples/batrobot_py_examples.egg-info/zip-safe
+batrobot_py_examples/__init__.py
+batrobot_py_examples/simple_publisher.py
+resource/batrobot_py_examples
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

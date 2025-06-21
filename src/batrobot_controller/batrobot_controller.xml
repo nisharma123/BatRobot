@@ -1,0 +1,10 @@
+<library path="batrobot_controller">
+    <class name="batrobot_controller/BatrobotInterface"
+           type="batrobot_controller::BatrobotInterface"
+           base_class_type="hardware_interface::SystemInterface">
+        <description>
+            Batrobot Hardware Interfce
+        </description>
+
+    </class>
+</library>

@@ -1,0 +1,35 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/batrobot_controller.dir/src/batrobot_interface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libbatrobot_controller.so[0m
+[100%] Built target batrobot_controller
+-- Install configuration: ""
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/batrobot_controller.xml
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/config
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/config/batrobot_controllers.yaml
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/launch
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/launch/controller.launch.py
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/lib/libbatrobot_controller.so
+-- Set runtime path of "/home/naveen/bat_robot/install/batrobot_controller/lib/libbatrobot_controller.so" to ""
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/include/include
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/include/include/batrobot_controller
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/include/include/batrobot_controller/batrobot_interface.hpp
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/library_path.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/library_path.dsv
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/package_run_dependencies/batrobot_controller
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/parent_prefix_path/batrobot_controller
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.bash
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.zsh
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.dsv
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/packages/batrobot_controller
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/batrobot_controller
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig.cmake
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig-version.cmake
+-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.xml

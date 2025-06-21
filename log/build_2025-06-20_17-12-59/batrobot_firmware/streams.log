@@ -1,0 +1,9 @@
+[0.099s] Invoking command in '/home/naveen/bat_robot/build/batrobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_firmware -- -j2 -l2
+[0.438s] Built target ament_cmake_python_copy_batrobot_firmware
+[2.801s] running egg_info
+[2.814s] writing batrobot_firmware.egg-info/PKG-INFO
+[2.815s] writing dependency_links to batrobot_firmware.egg-info/dependency_links.txt
+[2.816s] writing top-level names to batrobot_firmware.egg-info/top_level.txt
+[2.838s] reading manifest file 'batrobot_firmware.egg-info/SOURCES.txt'
+[2.850s] writing manifest file 'batrobot_firmware.egg-info/SOURCES.txt'
+[3.049s] Built target ament_cmake_python_build_batrobot_firmware_egg

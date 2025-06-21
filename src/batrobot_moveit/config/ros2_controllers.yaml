@@ -1,0 +1,39 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    # Remove controller-specific parameters from here
+    # They belong under each controller's section
+
+joint_state_broadcaster:
+  type: joint_state_broadcaster/JointStateBroadcaster
+
+arm_controller:
+  ros__parameters:
+    type: position_controllers/JointTrajectoryController 
+    joints:
+      - joint_1 
+      - joint_2
+      - joint_3
+      - joint_4
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    # Add action server parameters
+    action_monitor_rate: 20
+    allow_partial_joints_goal: true
+    constraints:
+      stopped_velocity_tolerance: 0.1
+
+gripper_controller:
+  ros__parameters:
+    type: position_controllers/JointTrajectoryController 
+    joints:
+      - joint_5 
+      - joint_6
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    # Add action server parameters
+    action_monitor_rate: 20
+    allow_partial_joints_goal: true
+    constraints:
+      stopped_velocity_tolerance: 0.1

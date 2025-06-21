@@ -1,0 +1,41 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/naveen/roarm_ws_em0/build/ros2web_widgets",
+        "/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web_example_py",
+        "/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/roarm_web_app",
+        "/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web_app",
+        "/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web",
+        "/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages",
+        "/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages",
+        "/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/launch_api",
+        "/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/naveen/roarm_ws_em0/build/ros2web_widgets",
+        "/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web_example_py",
+        "/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/roarm_web_app",
+        "/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web_app",
+        "/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/ros2web",
+        "/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages",
+        "/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages",
+        "/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages",
+        "/home/naveen/roarm_ws_em0/build/launch_api",
+        "/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "ros.distro": "humble"
+}

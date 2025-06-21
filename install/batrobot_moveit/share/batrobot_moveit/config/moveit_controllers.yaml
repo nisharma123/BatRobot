@@ -1,0 +1,27 @@
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_controller
+    - gripper_controller
+
+  arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    controller_manager_ns: /controller_manager
+    default: true
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+    action_timeout: 20.0
+
+  gripper_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory 
+    controller_manager_ns: /controller_manager
+    default: false
+    joints:
+      - joint_5
+      - joint_6
+    action_timeout: 20.0

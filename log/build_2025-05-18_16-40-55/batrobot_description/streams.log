@@ -1,0 +1,32 @@
+[0.074s] Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[0.210s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.870s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.266s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.270s] -- Added test 'lint_cmake' to check CMake code style
+[1.274s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.284s] -- Added test 'xmllint' to check XML markup files
+[1.292s] -- Configuring done
+[1.316s] -- Generating done
+[1.327s] -- Build files have been written to: /home/naveen/bat_robot/build/batrobot_description
+[1.445s] Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[1.489s] Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description
+[1.511s] -- Install configuration: ""
+[1.514s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes
+[1.515s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_right.stl
+[1.517s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint3.stl
+[1.524s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base_plate.stl
+[1.526s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base.stl
+[1.526s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint2.stl
+[1.529s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint1.stl
+[1.534s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_left.stl
+[1.536s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf
+[1.537s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot.urdf.xacro
+[1.538s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch
+[1.540s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/display.launch.py
+[1.540s] [31mCMake Error at cmake_install.cmake:46 (file):
+[1.540s]   file INSTALL cannot find
+[1.543s]   "/home/naveen/bat_robot/src/batrobot_description/rviz": No such file or
+[1.548s]   directory.
+[1.550s] 
+[1.550s] [0m
+[1.551s] Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description

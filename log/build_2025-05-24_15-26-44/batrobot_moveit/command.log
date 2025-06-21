@@ -1,0 +1,2 @@
+Invoking command in '/home/naveen/bat_robot/build/batrobot_moveit': /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveit -- -j2 -l2
+Invoked command in '/home/naveen/bat_robot/build/batrobot_moveit' returned '2': /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveit -- -j2 -l2

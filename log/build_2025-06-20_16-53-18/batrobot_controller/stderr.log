@@ -1,0 +1,29 @@
+[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:822 (if):
+  Syntax error in cmake code at
+
+    /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:823
+
+  when parsing string
+
+    ${__pkg_config_arguments_SERIAL,}
+
+  Invalid character (',') in a variable name: '__pkg_config_arguments_SERIAL'
+Call Stack (most recent call first):
+  CMakeLists.txt:55 (pkg_check_modules)
+
+[0m
+[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:822 (if):
+  Syntax error in cmake code at
+
+    /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:824
+
+  when parsing string
+
+    ${__pkg_config_arguments_SERIAL,}
+
+  Invalid character (',') in a variable name: '__pkg_config_arguments_SERIAL'
+Call Stack (most recent call first):
+  CMakeLists.txt:55 (pkg_check_modules)
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1

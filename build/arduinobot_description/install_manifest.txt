@@ -1,0 +1,15 @@
+/home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+/home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/path.sh
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/environment/path.dsv
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.bash
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.sh
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.zsh
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/local_setup.dsv
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/package.dsv
+/home/naveen/bat_robot/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake
+/home/naveen/bat_robot/install/arduinobot_description/share/arduinobot_description/package.xml

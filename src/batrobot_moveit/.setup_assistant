@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: batrobot_description
+    relative_path: urdf/bat_robot.urdf.xacro
+  srdf:
+    relative_path: config/batrobot.srdf
+  package_settings:
+    author_name: Nishtha
+    author_email: ginger1nishtha@gmail.com
+    generated_timestamp: 1748092774
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocityq

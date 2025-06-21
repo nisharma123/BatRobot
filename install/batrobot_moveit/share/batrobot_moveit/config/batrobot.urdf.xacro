@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="batrobot">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import batrobot urdf file -->
+    <xacro:include filename="$(find batrobot_description)/urdf/bat_robot.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="batrobot.ros2_control.xacro" />
+
+
+    <xacro:batrobot_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

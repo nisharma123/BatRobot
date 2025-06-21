@@ -1,0 +1,17 @@
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/launch/simulated_robot.launch.py
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/launch/real_robot.launch.py
+/home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/package_run_dependencies/batrobot_bringup
+/home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/parent_prefix_path/batrobot_bringup
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/ament_prefix_path.sh
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/ament_prefix_path.dsv
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/path.sh
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/path.dsv
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.bash
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.sh
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.zsh
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.dsv
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.dsv
+/home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/packages/batrobot_bringup
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/cmake/batrobot_bringupConfig.cmake
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/cmake/batrobot_bringupConfig-version.cmake
+/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.xml

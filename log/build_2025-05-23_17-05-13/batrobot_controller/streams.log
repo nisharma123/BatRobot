@@ -1,0 +1,42 @@
+[0.139s] Invoking command in '/home/naveen/bat_robot/build/batrobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_controller -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_controller
+[1.240s] -- The C compiler identification is GNU 11.4.0
+[1.763s] -- The CXX compiler identification is GNU 11.4.0
+[1.816s] -- Detecting C compiler ABI info
+[2.488s] -- Detecting C compiler ABI info - done
+[2.557s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.561s] -- Detecting C compile features
+[2.561s] -- Detecting C compile features - done
+[2.596s] -- Detecting CXX compiler ABI info
+[3.375s] -- Detecting CXX compiler ABI info - done
+[3.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.470s] -- Detecting CXX compile features
+[3.474s] -- Detecting CXX compile features - done
+[3.561s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.037s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.968s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.754s] -- Added test 'lint_cmake' to check CMake code style
+[6.766s] -- Added test 'xmllint' to check XML markup files
+[6.781s] -- Configuring done
+[6.813s] -- Generating done
+[6.836s] -- Build files have been written to: /home/naveen/bat_robot/build/batrobot_controller
+[6.869s] Invoked command in '/home/naveen/bat_robot/build/batrobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_controller -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_controller
+[6.872s] Invoking command in '/home/naveen/bat_robot/build/batrobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_controller -- -j2 -l2
+[7.226s] Invoked command in '/home/naveen/bat_robot/build/batrobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_controller -- -j2 -l2
+[7.236s] Invoking command in '/home/naveen/bat_robot/build/batrobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_controller
+[7.304s] -- Install configuration: ""
+[7.304s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/package_run_dependencies/batrobot_controller
+[7.310s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/parent_prefix_path/batrobot_controller
+[7.310s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.sh
+[7.318s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.dsv
+[7.318s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.sh
+[7.322s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.dsv
+[7.323s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.bash
+[7.330s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.sh
+[7.331s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.zsh
+[7.331s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.dsv
+[7.338s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.dsv
+[7.338s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/packages/batrobot_controller
+[7.339s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig.cmake
+[7.344s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig-version.cmake
+[7.345s] -- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.xml
+[7.367s] Invoked command in '/home/naveen/bat_robot/build/batrobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_controller

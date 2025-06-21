@@ -1,0 +1,16 @@
+[0.035s] Invoking command in '/home/naveen/bat_robot/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/arduinobot_description -- -j2 -l2
+[0.093s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.514s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.720s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.721s]   ament_package_xml() package name 'arduinobot_description' in '/package.xml'
+[0.721s] -- Configuring incomplete, errors occurred!
+[0.721s] See also "/home/naveen/bat_robot/build/arduinobot_description/CMakeFiles/CMakeOutput.log".
+[0.721s]   does not match current PROJECT_NAME 'batrobot_description'.  You must call
+[0.722s]   project() with the same package name before.
+[0.722s] Call Stack (most recent call first):
+[0.722s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.722s]   CMakeLists.txt:28 (ament_lint_auto_find_test_dependencies)
+[0.723s] 
+[0.723s] [0m
+[0.735s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.745s] Invoked command in '/home/naveen/bat_robot/build/arduinobot_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/arduinobot_description -- -j2 -l2

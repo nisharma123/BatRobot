@@ -1,0 +1,15 @@
+/home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/package_run_dependencies/batrobot_moveits
+/home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/parent_prefix_path/batrobot_moveits
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/ament_prefix_path.sh
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/ament_prefix_path.dsv
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/path.sh
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/environment/path.dsv
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.bash
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.sh
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.zsh
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/local_setup.dsv
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/package.dsv
+/home/naveen/bat_robot/install/batrobot_moveits/share/ament_index/resource_index/packages/batrobot_moveits
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/cmake/batrobot_moveitsConfig.cmake
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/cmake/batrobot_moveitsConfig-version.cmake
+/home/naveen/bat_robot/install/batrobot_moveits/share/batrobot_moveits/package.xml

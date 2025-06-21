@@ -1,0 +1,22 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/naveen/bat_robot/build/batrobot_description
+-- Install configuration: ""
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_right.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint3.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base_plate.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint2.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint1.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_left.stl
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot.urdf.xacro
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch
+-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/display.launch.py
