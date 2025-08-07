@@ -1,0 +1,42 @@
+[0.140s] Invoking command in '/home/naveen/bat_robot/build/batrobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_firmware -- -j2 -l2
+[1.065s] Built target ament_cmake_python_copy_batrobot_firmware
+[7.793s] running egg_info
+[7.806s] writing batrobot_firmware.egg-info/PKG-INFO
+[7.811s] writing dependency_links to batrobot_firmware.egg-info/dependency_links.txt
+[7.820s] writing top-level names to batrobot_firmware.egg-info/top_level.txt
+[7.899s] reading manifest file 'batrobot_firmware.egg-info/SOURCES.txt'
+[7.914s] writing manifest file 'batrobot_firmware.egg-info/SOURCES.txt'
+[8.456s] Built target ament_cmake_python_build_batrobot_firmware_egg
+[8.639s] Invoked command in '/home/naveen/bat_robot/build/batrobot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_firmware -- -j2 -l2
+[8.659s] Invoking command in '/home/naveen/bat_robot/build/batrobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_firmware
+[8.767s] -- Install configuration: ""
+[8.768s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/pythonpath.sh
+[8.768s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/pythonpath.dsv
+[8.776s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info
+[8.777s] -- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.777s] -- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/top_level.txt
+[8.786s] -- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.790s] -- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/PKG-INFO
+[8.794s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware
+[8.796s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/__init__.py
+[8.803s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/simple_serial_reciever.py
+[8.805s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/simple_serial_transmitter.py
+[9.431s] Listing '/home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware'...
+[9.497s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/lib/batrobot_firmware/simple_serial_transmitter.py
+[9.509s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/lib/batrobot_firmware/simple_serial_reciever.py
+[9.509s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/package_run_dependencies/batrobot_firmware
+[9.510s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/parent_prefix_path/batrobot_firmware
+[9.510s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/ament_prefix_path.sh
+[9.510s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/ament_prefix_path.dsv
+[9.511s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/path.sh
+[9.525s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/path.dsv
+[9.536s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.bash
+[9.539s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.sh
+[9.549s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.zsh
+[9.552s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.dsv
+[9.553s] -- Installing: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.dsv
+[9.558s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/packages/batrobot_firmware
+[9.562s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/cmake/batrobot_firmwareConfig.cmake
+[9.566s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/cmake/batrobot_firmwareConfig-version.cmake
+[9.567s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.xml
+[9.657s] Invoked command in '/home/naveen/bat_robot/build/batrobot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_firmware

@@ -1,0 +1,42 @@
+[0.059s] Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_msgs -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_msgs
+[0.903s] -- The C compiler identification is GNU 11.4.0
+[1.417s] -- The CXX compiler identification is GNU 11.4.0
+[1.488s] -- Detecting C compiler ABI info
+[2.085s] -- Detecting C compiler ABI info - done
+[2.147s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.153s] -- Detecting C compile features
+[2.157s] -- Detecting C compile features - done
+[2.190s] -- Detecting CXX compiler ABI info
+[2.735s] -- Detecting CXX compiler ABI info - done
+[2.813s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.815s] -- Detecting CXX compile features
+[2.819s] -- Detecting CXX compile features - done
+[2.872s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.150s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.194s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.199s] -- Added test 'lint_cmake' to check CMake code style
+[6.212s] -- Added test 'xmllint' to check XML markup files
+[6.228s] -- Configuring done
+[6.255s] -- Generating done
+[6.280s] -- Build files have been written to: /home/naveen/bat_robot/build/batrobot_msgs
+[6.320s] Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_msgs -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_msgs
+[6.327s] Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[6.643s] Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[6.651s] Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs
+[6.749s] -- Install configuration: ""
+[6.751s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/package_run_dependencies/batrobot_msgs
+[6.755s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/parent_prefix_path/batrobot_msgs
+[6.756s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.sh
+[6.756s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.dsv
+[6.760s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.sh
+[6.763s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.dsv
+[6.764s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.bash
+[6.767s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.sh
+[6.770s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.zsh
+[6.774s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.dsv
+[6.777s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.dsv
+[6.777s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/packages/batrobot_msgs
+[6.781s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig.cmake
+[6.781s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig-version.cmake
+[6.782s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.xml
+[6.798s] Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs

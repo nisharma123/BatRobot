@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-88b02e5fb71bc8ac5718.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "batrobot_alexa",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_batrobot_alexa_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_batrobot_alexa_egg-8f8035c0bd2c8b109745.json",
+					"name" : "ament_cmake_python_build_batrobot_alexa_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_batrobot_alexa::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_batrobot_alexa-2ae11baaef787c9d89d8.json",
+					"name" : "ament_cmake_python_copy_batrobot_alexa",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "batrobot_alexa_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-batrobot_alexa_uninstall-2fee4bba695aa0fa06ed.json",
+					"name" : "batrobot_alexa_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task_server-3a75903ae8af4e006768.json",
+					"name" : "task_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task_server_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task_server_node-bfd8c4d472aeddb45735.json",
+					"name" : "task_server_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4c61d3915392c1f72a9f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/naveen/bat_robot/build/batrobot_alexa",
+		"source" : "/home/naveen/bat_robot/src/batrobot_alexa"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

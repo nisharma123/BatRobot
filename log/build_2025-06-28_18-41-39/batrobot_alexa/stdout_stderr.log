@@ -1,0 +1,335 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found batrobot_msgs: 0.0.0 (/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake)
+-- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/naveen/bat_robot/build/batrobot_alexa
+[ 25%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   28 |   rclcpp_action::Server<[01;31m[Kbatrobot[m[K::action::BatrobotTask>::SharedPtr action_server_;
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:28:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |   rclcpp_action::Server<batrobot::action::BatrobotTask[01;31m[K>[m[K::SharedPtr action_server_;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:28:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |   rclcpp_action::Server<batrobot::action::BatrobotTask>::[01;31m[KSharedPtr[m[K action_server_;
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:28:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ does not name a type; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+   28 |   rclcpp_action::Server<batrobot::action::BatrobotTask>::SharedPtr [01;31m[Kaction_server_[m[K;
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                    [32m[Krcl_action_server_t[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:37:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   34 |       std::shared_ptr<const batrobot[01;31m[K::[m[Kaction::BatrobotTask::Goal> goal)
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |       std::shared_ptr<const batrobot::action::BatrobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:37:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   34 |       std::shared_ptr<const batrobot[01;31m[K::[m[Kaction::BatrobotTask::Goal> goal)
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |       std::shared_ptr<const batrobot::action::BatrobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:37:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   34 |       std::shared_ptr<const batrobot[01;31m[K::[m[Kaction::BatrobotTask::Goal> goal)
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |       std::shared_ptr<const batrobot::action::BatrobotTask::Goal[01;31m[K>[m[K goal)
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:7:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   34 |       [01;31m[Kstd[m[K::shared_ptr<const batrobot::action::BatrobotTask::Goal> goal)
+      |       [01;31m[K^~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:37:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ktype name[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   34 |       std::shared_ptr<const batrobot[01;31m[K::[m[Kaction::BatrobotTask::Goal> goal)
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:23:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   34 |       std::shared_ptr<[01;31m[Kconst[m[K batrobot::action::BatrobotTask::Goal> goal)
+      |                       [01;31m[K^~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:34:7:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   34 |       [01;31m[Kstd[m[K::shared_ptr<const batrobot::action::BatrobotTask::Goal> goal)
+      |       [01;31m[K^~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kaatrobot[m[K’ was not declared in this scope
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kaatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kaatrobot[m[K’ was not declared in this scope
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kaatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kaatrobot[m[K’ was not declared in this scope
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kaatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:29:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   42 |       const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<aatrobot::action::BatrobotTask>> goal_handle)
+      |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kaatrobot[m[K’ was not declared in this scope
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kaatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   42 |       const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask>> goal_handle)
+      |             [01;31m[K^~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:94:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[Kgoal_handle[m[K’
+   42 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:94:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kgoal_handle[m[K’
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:42:7:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   42 |       [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<aatrobot::action::BatrobotTask>> goal_handle)
+      |       [01;31m[K^~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:29:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   56 |       const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:94:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:13:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   56 |       const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |             [01;31m[K^~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:94:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[Kgoal_handle[m[K’
+   56 |       const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:94:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kgoal_handle[m[K’
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:56:7:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   56 |       [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |       [01;31m[K^~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:100:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                                    [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:100:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                                    [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:100:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask[01;31m[K>>[m[K goal_handle)
+      |                                                                                                    [01;31m[K^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:38:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   62 |   void execute(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<[01;31m[Kbatrobot[m[K::action::BatrobotTask>> goal_handle)
+      |                                                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:22:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   62 |   void execute(const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:103:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[Kgoal_handle[m[K’
+   62 |   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> [01;31m[Kgoal_handle[m[K)
+      |                                                                                                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:103:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kgoal_handle[m[K’
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:62:16:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   62 |   void execute([01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot::action::BatrobotTask>> goal_handle)
+      |                [01;31m[K^~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In constructor ‘[01m[Kbatrobot_remote::TaskServer::TaskServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_action_server_t[m[K’?
+   21 |     [01;31m[Kaction_server_[m[K = rclcpp_action::create_server<aatrobot::action::BatrobotTask>(
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Krcl_action_server_t[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kaatrobot[m[K’ was not declared in this scope
+   21 |     action_server_ = rclcpp_action::create_server<[01;31m[Kaatrobot[m[K::action::BatrobotTask>(
+      |                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:37:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   21 |     action_server_ = rclcpp_action::[01;31m[Kcreate_server<aatrobot::action::BatrobotTask>[m[K(
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_server<<expression error> >(batrobot_remote::TaskServer*, const char [12], std::_Bind_helper<false, rclcpp_action::GoalResponse (batrobot_remote::TaskServer::*)(...), batrobot_remote::TaskServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, rclcpp_action::CancelResponse (batrobot_remote::TaskServer::*)(...), batrobot_remote::TaskServer*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (batrobot_remote::TaskServer::*)(...), batrobot_remote::TaskServer*, const std::_Placeholder<1>&>::type)[m[K’
+   21 |     action_server_ = [01;31m[Krclcpp_action::create_server<aatrobot::action::BatrobotTask>([m[K
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   22 | [01;31m[K        this, "task_server", std::bind(&TaskServer::goalCallback, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   23 | [01;31m[K        std::bind(&TaskServer::cancelCallback, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+   24 | [01;31m[K        std::bind(&TaskServer::acceptedCallback, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+   58 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:58:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:82:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     action_server_ = [01;31m[Krclcpp_action::create_server<aatrobot::action::BatrobotTask>([m[K
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   22 | [01;31m[K        this, "task_server", std::bind(&TaskServer::goalCallback, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   23 | [01;31m[K        std::bind(&TaskServer::cancelCallback, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+   24 | [01;31m[K        std::bind(&TaskServer::acceptedCallback, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Server<ActionT>::SharedPtr rclcpp_action::create_server(NodeT, const string&, typename rclcpp_action::Server<ActionT>::GoalCallback, typename rclcpp_action::Server<ActionT>::CancelCallback, typename rclcpp_action::Server<ActionT>::AcceptedCallback, const rcl_action_server_options_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  132 | [01;36m[Kcreate_server[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:132:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:21:82:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     action_server_ = [01;31m[Krclcpp_action::create_server<aatrobot::action::BatrobotTask>([m[K
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   22 | [01;31m[K        this, "task_server", std::bind(&TaskServer::goalCallback, this, _1, _2),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   23 | [01;31m[K        std::bind(&TaskServer::cancelCallback, this, _1),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+   24 | [01;31m[K        std::bind(&TaskServer::acceptedCallback, this, _1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                       
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:1[m[K:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse batrobot_remote::TaskServer::goalCallback(...)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:36:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+   36 |     RCLCPP_INFO(get_logger(), "Received goal request with id %d", [01;31m[Kgoal[m[K->task_number);
+      |                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse batrobot_remote::TaskServer::cancelCallback(...)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:44:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+   44 |     (void)[01;31m[Kgoal_handle[m[K;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid batrobot_remote::TaskServer::acceptedCallback(...)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:59:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+   59 |     std::thread{ std::bind(&TaskServer::execute, this, _1), [01;31m[Kgoal_handle[m[K }.detach();
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:59:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::thread::thread(<brace-enclosed initializer list>)[m[K’
+   59 |     std::thread{ std::bind(&TaskServer::execute, this, _1), goal_handle [01;31m[K}[m[K.detach();
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/future:48[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_thread.h:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Callable, class ... _Args, class> std::thread::thread(_Callable&&, _Args&& ...)[m[K’
+  127 |       [01;36m[Kthread[m[K(_Callable&& __f, _Args&&... __args)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:127:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/std_thread.h:157:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::thread::thread(std::thread&&)[m[K’
+  157 |     [01;36m[Kthread[m[K(thread&& __t) noexcept
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:157:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/11/bits/std_thread.h:121:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::thread::thread()[m[K’
+  121 |     [01;36m[Kthread[m[K() noexcept = default;
+      |     [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/std_thread.h:121:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid batrobot_remote::TaskServer::execute(...)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:65:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot[m[K’ was not declared in this scope
+   65 |     auto result = std::make_shared<[01;31m[Kbatrobot[m[K::action::BatrobotTask::Result>();
+      |                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:65:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   65 |     auto result = std::[01;31m[Kmake_shared<batrobot::action::BatrobotTask::Result>[m[K();
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:65:75:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   65 |     auto result = [01;31m[Kstd::make_shared<batrobot::action::BatrobotTask::Result>()[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:65:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     auto result = [01;31m[Kstd::make_shared<batrobot::action::BatrobotTask::Result>()[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+   75 |     if ([01;31m[Kgoal_handle[m[K->get_goal()->task_number == 0)
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:126:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+  126 |     [01;31m[Kgoal_handle[m[K->succeed(result);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:3[m[K:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K At global scope:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:132:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kbatrobot_alexa[m[K’ was not declared in this scope
+  132 | RCLCPP_COMPONENTS_REGISTER_NODE([01;31m[Kbatrobot_alexa[m[K::TaskServer)
+      |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:132:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  132 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(batrobot_alexa::TaskServer)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+                 from [01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:3[m[K:
+/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = int; B = rclcpp_components::NodeFactory][m[K’:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint*[m[K’ to ‘[01m[Krclcpp_components::NodeFactory*[m[K’ in return
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+      |            [01;31m[K|[m[K
+      |            [01;31m[Kint*[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

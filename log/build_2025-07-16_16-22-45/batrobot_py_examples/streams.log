@@ -1,0 +1,20 @@
+[11.972s] Invoking command in '/home/naveen/bat_robot/src/batrobot_py_examples': PYTHONPATH=/home/naveen/bat_robot/build/batrobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/batrobot_py_examples build --build-base /home/naveen/bat_robot/build/batrobot_py_examples/build install --record /home/naveen/bat_robot/build/batrobot_py_examples/install.log --single-version-externally-managed install_data
+[16.780s] running egg_info
+[16.793s] writing ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/PKG-INFO
+[16.797s] writing dependency_links to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/dependency_links.txt
+[16.800s] writing entry points to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/entry_points.txt
+[16.801s] writing requirements to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/requires.txt
+[16.804s] writing top-level names to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/top_level.txt
+[16.835s] reading manifest file '../../build/batrobot_py_examples/batrobot_py_examples.egg-info/SOURCES.txt'
+[16.851s] writing manifest file '../../build/batrobot_py_examples/batrobot_py_examples.egg-info/SOURCES.txt'
+[16.851s] running build
+[16.852s] running build_py
+[16.852s] running install
+[16.852s] running install_lib
+[16.864s] running install_data
+[16.864s] running install_egg_info
+[16.876s] removing '/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages/batrobot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)
+[16.876s] Copying ../../build/batrobot_py_examples/batrobot_py_examples.egg-info to /home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages/batrobot_py_examples-0.0.0-py3.10.egg-info
+[16.882s] running install_scripts
+[17.126s] writing list of installed files to '/home/naveen/bat_robot/build/batrobot_py_examples/install.log'
+[17.467s] Invoked command in '/home/naveen/bat_robot/src/batrobot_py_examples' returned '0': PYTHONPATH=/home/naveen/bat_robot/build/batrobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/batrobot_py_examples build --build-base /home/naveen/bat_robot/build/batrobot_py_examples/build install --record /home/naveen/bat_robot/build/batrobot_py_examples/install.log --single-version-externally-managed install_data

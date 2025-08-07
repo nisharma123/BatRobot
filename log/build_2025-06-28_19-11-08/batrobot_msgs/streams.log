@@ -1,0 +1,149 @@
+[0.147s] Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[0.644s] [  3%] Built target batrobot_msgs__cpp
+[0.839s] [ 12%] Built target batrobot_msgs__rosidl_generator_c
+[1.174s] [ 12%] Built target ament_cmake_python_copy_batrobot_msgs
+[1.395s] [ 22%] Built target batrobot_msgs__rosidl_typesupport_cpp
+[1.698s] [ 32%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_c
+[1.959s] [ 41%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_cpp
+[2.249s] [ 51%] Built target batrobot_msgs__rosidl_typesupport_introspection_c
+[2.501s] [ 61%] Built target batrobot_msgs__rosidl_typesupport_c
+[2.706s] [ 70%] Built target batrobot_msgs__rosidl_typesupport_introspection_cpp
+[6.719s] running egg_info
+[6.734s] writing batrobot_msgs.egg-info/PKG-INFO
+[6.735s] writing dependency_links to batrobot_msgs.egg-info/dependency_links.txt
+[6.741s] writing top-level names to batrobot_msgs.egg-info/top_level.txt
+[6.773s] reading manifest file 'batrobot_msgs.egg-info/SOURCES.txt'
+[6.778s] writing manifest file 'batrobot_msgs.egg-info/SOURCES.txt'
+[7.142s] [ 70%] Built target ament_cmake_python_build_batrobot_msgs_egg
+[7.367s] [ 70%] Built target batrobot_msgs
+[7.609s] [ 74%] Built target batrobot_msgs__py
+[7.860s] [ 80%] Built target batrobot_msgs__rosidl_generator_py
+[8.118s] [ 87%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.273s] [ 93%] Built target batrobot_msgs__rosidl_typesupport_introspection_c__pyext
+[8.488s] [100%] Built target batrobot_msgs__rosidl_typesupport_c__pyext
+[8.624s] Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[8.630s] Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs
+[8.693s] -- Install configuration: ""
+[8.694s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/rosidl_interfaces/batrobot_msgs
+[8.694s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.701s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg
+[8.706s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.706s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.706s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/batrobot_task.h
+[8.714s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.715s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__functions.c
+[8.720s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__functions.h
+[8.724s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__struct.h
+[8.725s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.h
+[8.727s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/library_path.sh
+[8.733s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/library_path.dsv
+[8.742s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_generator_c.so
+[8.743s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.743s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg
+[8.743s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.758s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.758s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.759s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_fastrtps_c.h
+[8.766s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_fastrtps_c.so
+[8.766s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.775s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg
+[8.775s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.777s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.781s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/batrobot_task.hpp
+[8.787s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.787s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.hpp
+[8.790s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__struct.hpp
+[8.790s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__traits.hpp
+[8.790s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__builder.hpp
+[8.795s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.795s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg
+[8.795s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.798s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.798s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.801s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/dds_fastrtps
+[8.802s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_fastrtps_cpp.hpp
+[8.806s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.808s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.809s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg
+[8.809s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.809s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.815s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.815s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.c
+[8.821s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_introspection_c.h
+[8.821s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_introspection_c.so
+[8.821s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_c.so
+[8.823s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs
+[8.824s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action
+[8.824s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail
+[8.828s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.cpp
+[8.831s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_introspection_cpp.hpp
+[8.831s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_introspection_cpp.so
+[8.831s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_cpp.so
+[8.835s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/pythonpath.sh
+[8.838s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/pythonpath.dsv
+[8.838s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info
+[8.838s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.843s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.851s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.851s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.851s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs
+[8.851s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/__init__.py
+[8.856s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.858s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.859s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/libbatrobot_msgs__rosidl_generator_py.so
+[8.859s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.859s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_c.c
+[8.867s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.867s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action
+[8.873s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/__init__.py
+[8.873s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/_batrobot_task_s.c
+[8.874s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/_batrobot_task.py
+[8.883s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.331s] Listing '/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs'...
+[9.331s] Listing '/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action'...
+[9.402s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.403s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.410s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.410s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_generator_py.so
+[9.412s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/action/BatrobotTask.idl
+[9.419s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/action/BatrobotTask.action
+[9.419s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/package_run_dependencies/batrobot_msgs
+[9.419s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/parent_prefix_path/batrobot_msgs
+[9.420s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.sh
+[9.420s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.dsv
+[9.420s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.sh
+[9.420s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.dsv
+[9.428s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.bash
+[9.432s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.sh
+[9.433s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.zsh
+[9.433s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.dsv
+[9.433s] -- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.dsv
+[9.438s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/packages/batrobot_msgs
+[9.438s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cExport.cmake
+[9.438s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.438s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.444s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.445s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cppExport.cmake
+[9.445s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.445s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.454s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.454s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.454s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cExport.cmake
+[9.455s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.455s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.455s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.455s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cppExport.cmake
+[9.464s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.464s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_pyExport.cmake
+[9.464s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.464s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake-extras.cmake
+[9.471s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.471s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.475s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.477s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.479s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.479s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.482s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig.cmake
+[9.489s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig-version.cmake
+[9.490s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.xml
+[9.490s] Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs

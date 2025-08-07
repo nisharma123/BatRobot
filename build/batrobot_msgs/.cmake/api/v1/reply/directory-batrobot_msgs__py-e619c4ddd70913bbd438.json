@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "batrobot_msgs__py",
+		"source" : "/home/naveen/bat_robot/build/batrobot_msgs/batrobot_msgs__py"
+	}
+}

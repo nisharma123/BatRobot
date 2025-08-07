@@ -24,9 +24,9 @@ def generate_launch_description():
     moveit_config_dict.update({
         "use_sim_time": True,
         "controller_manager_name": "controller_manager",
-        "moveit_controller_manager": "moveit_simple_controller_manager/MoveItSimpleControllerManager",  # ADD THIS
+        "moveit_controller_manager": "moveit_simple_controller_manager/MoveItSimpleControllerManager",  
         "use_controller_manager": True,
-        "moveit_manage_controllers": False,  # MUST BE FALSE
+        "moveit_manage_controllers": False,
         "trajectory_execution.allowed_execution_duration_scaling": 4.0,
         "trajectory_execution.execution_duration_monitoring": False,
         "capabilities": "move_group/ExecuteTrajectoryAction",

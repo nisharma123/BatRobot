@@ -1,0 +1,76 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found batrobot_msgs: 0.0.0 (/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake)
+-- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/naveen/bat_robot/build/batrobot_alexa
+[35m[1mConsolidate compiler generated dependencies of target task_server[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libtask_server.so[0m
+[ 50%] Built target task_server
+[35m[1mConsolidate compiler generated dependencies of target task_server_node[0m
+[100%] Built target task_server_node
+[100%] Built target ament_cmake_python_copy_batrobot_alexa
+running egg_info
+writing batrobot_alexa.egg-info/PKG-INFO
+writing dependency_links to batrobot_alexa.egg-info/dependency_links.txt
+writing top-level names to batrobot_alexa.egg-info/top_level.txt
+reading manifest file 'batrobot_alexa.egg-info/SOURCES.txt'
+writing manifest file 'batrobot_alexa.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_batrobot_alexa_egg
+-- Install configuration: ""
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/task_server_node
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/__init__.py
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/alexa_interface.py
+Listing '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa'...
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch/alexa_interface.launch.py
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/lib/libtask_server.so
+-- Set runtime path of "/home/naveen/bat_robot/install/batrobot_alexa/lib/libtask_server.so" to ""
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/alexa_interface.py
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/package_run_dependencies/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/parent_prefix_path/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.sh
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.bash
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.zsh
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.dsv
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/packages/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/rclcpp_components/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig.cmake
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig-version.cmake
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.xml

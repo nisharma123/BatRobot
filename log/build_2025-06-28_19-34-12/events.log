@@ -1,0 +1,1202 @@
+[0.000000] (-) TimerEvent: {}
+[0.000837] (batrobot_description) JobQueued: {'identifier': 'batrobot_description', 'dependencies': OrderedDict()}
+[0.001008] (batrobot_firmware) JobQueued: {'identifier': 'batrobot_firmware', 'dependencies': OrderedDict()}
+[0.001080] (batrobot_msgs) JobQueued: {'identifier': 'batrobot_msgs', 'dependencies': OrderedDict()}
+[0.001142] (batrobot_py_examples) JobQueued: {'identifier': 'batrobot_py_examples', 'dependencies': OrderedDict()}
+[0.001204] (batrobot_controller) JobQueued: {'identifier': 'batrobot_controller', 'dependencies': OrderedDict([('batrobot_description', '/home/naveen/bat_robot/install/batrobot_description')])}
+[0.001293] (batrobot_moveit) JobQueued: {'identifier': 'batrobot_moveit', 'dependencies': OrderedDict([('batrobot_description', '/home/naveen/bat_robot/install/batrobot_description'), ('batrobot_controller', '/home/naveen/bat_robot/install/batrobot_controller')])}
+[0.001386] (batrobot_alexa) JobQueued: {'identifier': 'batrobot_alexa', 'dependencies': OrderedDict([('batrobot_description', '/home/naveen/bat_robot/install/batrobot_description'), ('batrobot_msgs', '/home/naveen/bat_robot/install/batrobot_msgs'), ('batrobot_controller', '/home/naveen/bat_robot/install/batrobot_controller'), ('batrobot_moveit', '/home/naveen/bat_robot/install/batrobot_moveit')])}
+[0.001469] (batrobot_bringup) JobQueued: {'identifier': 'batrobot_bringup', 'dependencies': OrderedDict([('batrobot_description', '/home/naveen/bat_robot/install/batrobot_description'), ('batrobot_controller', '/home/naveen/bat_robot/install/batrobot_controller'), ('batrobot_moveit', '/home/naveen/bat_robot/install/batrobot_moveit')])}
+[0.001545] (batrobot_description) JobStarted: {'identifier': 'batrobot_description'}
+[0.054486] (batrobot_msgs) JobStarted: {'identifier': 'batrobot_msgs'}
+[0.091859] (batrobot_description) JobProgress: {'identifier': 'batrobot_description', 'progress': 'cmake'}
+[0.093751] (batrobot_description) JobProgress: {'identifier': 'batrobot_description', 'progress': 'build'}
+[0.095155] (-) TimerEvent: {}
+[0.098187] (batrobot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_description', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[0.136400] (batrobot_msgs) JobProgress: {'identifier': 'batrobot_msgs', 'progress': 'cmake'}
+[0.144516] (batrobot_msgs) JobProgress: {'identifier': 'batrobot_msgs', 'progress': 'build'}
+[0.151011] (batrobot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_msgs', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[0.199519] (-) TimerEvent: {}
+[0.301452] (-) TimerEvent: {}
+[0.402027] (-) TimerEvent: {}
+[0.503377] (-) TimerEvent: {}
+[0.539224] (batrobot_description) CommandEnded: {'returncode': 0}
+[0.554830] (batrobot_description) JobProgress: {'identifier': 'batrobot_description', 'progress': 'install'}
+[0.606927] (-) TimerEvent: {}
+[0.626851] (batrobot_msgs) StdoutLine: {'line': b'[  3%] Built target batrobot_msgs__cpp\n'}
+[0.641284] (batrobot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_description'], 'cwd': '/home/naveen/bat_robot/build/batrobot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[0.716335] (-) TimerEvent: {}
+[0.736578] (batrobot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.737108] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes\n'}
+[0.741637] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_right.stl\n'}
+[0.742171] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/pi_camera.STL\n'}
+[0.743538] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint3.stl\n'}
+[0.746788] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base_plate.stl\n'}
+[0.747236] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base.stl\n'}
+[0.757368] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint2.stl\n'}
+[0.757843] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint1.stl\n'}
+[0.758164] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_left.stl\n'}
+[0.768744] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf\n'}
+[0.769096] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot_ros2_control.xacro\n'}
+[0.769455] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot.urdf.xacro\n'}
+[0.769751] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot_gazebo.xacro\n'}
+[0.770043] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch\n'}
+[0.773836] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/display.launch.py\n'}
+[0.775883] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/gazebo.launch.py\n'}
+[0.776321] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/rviz\n'}
+[0.776662] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/rviz/display.rviz\n'}
+[0.776924] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/package_run_dependencies/batrobot_description\n'}
+[0.783331] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/parent_prefix_path/batrobot_description\n'}
+[0.783785] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/ament_prefix_path.sh\n'}
+[0.786687] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/ament_prefix_path.dsv\n'}
+[0.787024] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/path.sh\n'}
+[0.787413] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/path.dsv\n'}
+[0.788056] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.bash\n'}
+[0.789206] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.sh\n'}
+[0.789687] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.zsh\n'}
+[0.789918] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.dsv\n'}
+[0.790152] (batrobot_description) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.dsv\n'}
+[0.790469] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/packages/batrobot_description\n'}
+[0.790675] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/cmake/batrobot_descriptionConfig.cmake\n'}
+[0.790871] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/cmake/batrobot_descriptionConfig-version.cmake\n'}
+[0.791087] (batrobot_description) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.xml\n'}
+[0.794865] (batrobot_description) CommandEnded: {'returncode': 0}
+[0.819175] (-) TimerEvent: {}
+[0.832233] (batrobot_msgs) StdoutLine: {'line': b'[ 12%] Built target batrobot_msgs__rosidl_generator_c\n'}
+[0.921588] (-) TimerEvent: {}
+[1.019524] (batrobot_description) JobEnded: {'identifier': 'batrobot_description', 'rc': 0}
+[1.043419] (-) TimerEvent: {}
+[1.043867] (batrobot_controller) JobStarted: {'identifier': 'batrobot_controller'}
+[1.133574] (batrobot_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_batrobot_msgs\n'}
+[1.148330] (-) TimerEvent: {}
+[1.153481] (batrobot_controller) JobProgress: {'identifier': 'batrobot_controller', 'progress': 'cmake'}
+[1.164112] (batrobot_controller) JobProgress: {'identifier': 'batrobot_controller', 'progress': 'build'}
+[1.164311] (batrobot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_controller', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[1.250465] (-) TimerEvent: {}
+[1.286152] (batrobot_msgs) StdoutLine: {'line': b'[ 22%] Built target batrobot_msgs__rosidl_typesupport_cpp\n'}
+[1.354452] (-) TimerEvent: {}
+[1.458784] (-) TimerEvent: {}
+[1.531497] (batrobot_msgs) StdoutLine: {'line': b'[ 32%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.558962] (-) TimerEvent: {}
+[1.663399] (-) TimerEvent: {}
+[1.753935] (batrobot_msgs) StdoutLine: {'line': b'[ 41%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.767752] (-) TimerEvent: {}
+[1.829293] (batrobot_controller) StdoutLine: {'line': b'[100%] Built target batrobot_controller\n'}
+[1.873616] (-) TimerEvent: {}
+[1.934411] (batrobot_controller) CommandEnded: {'returncode': 0}
+[1.946267] (batrobot_controller) JobProgress: {'identifier': 'batrobot_controller', 'progress': 'install'}
+[1.954110] (batrobot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_controller'], 'cwd': '/home/naveen/bat_robot/build/batrobot_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[1.973716] (-) TimerEvent: {}
+[2.007222] (batrobot_msgs) StdoutLine: {'line': b'[ 51%] Built target batrobot_msgs__rosidl_typesupport_introspection_c\n'}
+[2.058523] (batrobot_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.059014] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/batrobot_controller.xml\n'}
+[2.059371] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/config\n'}
+[2.063637] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/config/batrobot_controllers.yaml\n'}
+[2.067894] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/launch\n'}
+[2.068238] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/launch/controller.launch.py\n'}
+[2.073455] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/lib/libbatrobot_controller.so\n'}
+[2.073879] (-) TimerEvent: {}
+[2.074186] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/include/include\n'}
+[2.079861] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/include/include/batrobot_controller\n'}
+[2.080662] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/include/include/batrobot_controller/batrobot_interface.hpp\n'}
+[2.084021] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/library_path.sh\n'}
+[2.084452] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/library_path.dsv\n'}
+[2.084806] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/package_run_dependencies/batrobot_controller\n'}
+[2.085072] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/parent_prefix_path/batrobot_controller\n'}
+[2.089059] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.sh\n'}
+[2.091513] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/ament_prefix_path.dsv\n'}
+[2.091950] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.sh\n'}
+[2.097516] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/environment/path.dsv\n'}
+[2.098066] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.bash\n'}
+[2.098431] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.sh\n'}
+[2.098775] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.zsh\n'}
+[2.099021] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/local_setup.dsv\n'}
+[2.105582] (batrobot_controller) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.dsv\n'}
+[2.106481] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/packages/batrobot_controller\n'}
+[2.112831] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/batrobot_controller\n'}
+[2.113206] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.119004] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.122133] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.128714] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig.cmake\n'}
+[2.129113] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/cmake/batrobot_controllerConfig-version.cmake\n'}
+[2.129445] (batrobot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.xml\n'}
+[2.129721] (batrobot_controller) CommandEnded: {'returncode': 0}
+[2.174985] (-) TimerEvent: {}
+[2.247916] (batrobot_msgs) StdoutLine: {'line': b'[ 61%] Built target batrobot_msgs__rosidl_typesupport_c\n'}
+[2.277547] (-) TimerEvent: {}
+[2.383474] (-) TimerEvent: {}
+[2.456207] (batrobot_controller) JobEnded: {'identifier': 'batrobot_controller', 'rc': 0}
+[2.468647] (batrobot_moveit) JobStarted: {'identifier': 'batrobot_moveit'}
+[2.498184] (-) TimerEvent: {}
+[2.563366] (batrobot_msgs) StdoutLine: {'line': b'[ 70%] Built target batrobot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.601110] (-) TimerEvent: {}
+[2.610415] (batrobot_moveit) JobProgress: {'identifier': 'batrobot_moveit', 'progress': 'cmake'}
+[2.618606] (batrobot_moveit) JobProgress: {'identifier': 'batrobot_moveit', 'progress': 'build'}
+[2.619183] (batrobot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_moveit', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_moveit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_moveit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[2.704385] (-) TimerEvent: {}
+[2.811596] (-) TimerEvent: {}
+[2.918436] (-) TimerEvent: {}
+[3.019715] (-) TimerEvent: {}
+[3.087591] (batrobot_moveit) CommandEnded: {'returncode': 0}
+[3.100201] (batrobot_moveit) JobProgress: {'identifier': 'batrobot_moveit', 'progress': 'install'}
+[3.105925] (batrobot_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_moveit'], 'cwd': '/home/naveen/bat_robot/build/batrobot_moveit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_moveit'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[3.124399] (-) TimerEvent: {}
+[3.205897] (batrobot_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.207928] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/ament_index/resource_index/package_run_dependencies/batrobot_moveit\n'}
+[3.211696] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/ament_index/resource_index/parent_prefix_path/batrobot_moveit\n'}
+[3.212136] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/environment/ament_prefix_path.sh\n'}
+[3.217212] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/environment/ament_prefix_path.dsv\n'}
+[3.218330] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/environment/path.sh\n'}
+[3.218718] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/environment/path.dsv\n'}
+[3.219068] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/local_setup.bash\n'}
+[3.228000] (-) TimerEvent: {}
+[3.228396] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/local_setup.sh\n'}
+[3.228984] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/local_setup.zsh\n'}
+[3.233615] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/local_setup.dsv\n'}
+[3.234022] (batrobot_moveit) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.dsv\n'}
+[3.234345] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/ament_index/resource_index/packages/batrobot_moveit\n'}
+[3.234707] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/cmake/batrobot_moveitConfig.cmake\n'}
+[3.234995] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/cmake/batrobot_moveitConfig-version.cmake\n'}
+[3.235220] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.xml\n'}
+[3.241530] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch\n'}
+[3.241856] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/static_virtual_joint_tfs.launch.py\n'}
+[3.242109] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/spawn_controllers.launch.py\n'}
+[3.248895] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/moveit.launch.py\n'}
+[3.251418] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/moveit_rviz.launch.py\n'}
+[3.251963] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/move_group.launch.py\n'}
+[3.254209] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/rsp.launch.py\n'}
+[3.255490] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/setup_assistant.launch.py\n'}
+[3.255984] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/demo.launch.py\n'}
+[3.257305] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/launch/warehouse_db.launch.py\n'}
+[3.257878] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config\n'}
+[3.258194] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/joint_limits.yaml\n'}
+[3.258530] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/moveit.rviz\n'}
+[3.258892] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/kinematics.yaml\n'}
+[3.259156] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/initial_positions.yaml\n'}
+[3.281172] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/batrobot.srdf\n'}
+[3.290313] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/moveit_controllers.yaml\n'}
+[3.290756] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/batrobot.ros2_control.xacro\n'}
+[3.291065] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/ros2_controllers.yaml\n'}
+[3.291369] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/batrobot.urdf.xacro\n'}
+[3.291709] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/pilz_cartesian_limits.yaml\n'}
+[3.292008] (batrobot_moveit) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/.setup_assistant\n'}
+[3.297356] (batrobot_moveit) CommandEnded: {'returncode': 0}
+[3.346121] (-) TimerEvent: {}
+[3.449813] (-) TimerEvent: {}
+[3.470792] (batrobot_moveit) JobEnded: {'identifier': 'batrobot_moveit', 'rc': 0}
+[3.472811] (batrobot_firmware) JobStarted: {'identifier': 'batrobot_firmware'}
+[3.555750] (batrobot_firmware) JobProgress: {'identifier': 'batrobot_firmware', 'progress': 'cmake'}
+[3.555958] (-) TimerEvent: {}
+[3.563222] (batrobot_firmware) JobProgress: {'identifier': 'batrobot_firmware', 'progress': 'build'}
+[3.568760] (batrobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_firmware', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_firmware', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_firmware'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[3.656560] (-) TimerEvent: {}
+[3.758066] (-) TimerEvent: {}
+[3.861657] (-) TimerEvent: {}
+[3.964702] (-) TimerEvent: {}
+[4.070410] (-) TimerEvent: {}
+[4.172874] (-) TimerEvent: {}
+[4.190504] (batrobot_firmware) StdoutLine: {'line': b'Built target ament_cmake_python_copy_batrobot_firmware\n'}
+[4.275854] (-) TimerEvent: {}
+[4.377645] (-) TimerEvent: {}
+[4.482321] (-) TimerEvent: {}
+[4.588542] (-) TimerEvent: {}
+[4.689423] (-) TimerEvent: {}
+[4.793217] (-) TimerEvent: {}
+[4.897655] (-) TimerEvent: {}
+[5.001877] (-) TimerEvent: {}
+[5.105401] (-) TimerEvent: {}
+[5.207372] (-) TimerEvent: {}
+[5.311603] (-) TimerEvent: {}
+[5.414445] (-) TimerEvent: {}
+[5.522408] (-) TimerEvent: {}
+[5.623386] (-) TimerEvent: {}
+[5.726444] (-) TimerEvent: {}
+[5.828493] (-) TimerEvent: {}
+[5.931935] (-) TimerEvent: {}
+[6.035704] (-) TimerEvent: {}
+[6.138708] (-) TimerEvent: {}
+[6.239556] (-) TimerEvent: {}
+[6.342352] (-) TimerEvent: {}
+[6.445393] (-) TimerEvent: {}
+[6.548914] (-) TimerEvent: {}
+[6.651995] (-) TimerEvent: {}
+[6.756764] (-) TimerEvent: {}
+[6.779341] (batrobot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.793513] (batrobot_msgs) StdoutLine: {'line': b'writing batrobot_msgs.egg-info/PKG-INFO\n'}
+[6.797990] (batrobot_msgs) StdoutLine: {'line': b'writing dependency_links to batrobot_msgs.egg-info/dependency_links.txt\n'}
+[6.801636] (batrobot_msgs) StdoutLine: {'line': b'writing top-level names to batrobot_msgs.egg-info/top_level.txt\n'}
+[6.828373] (batrobot_msgs) StdoutLine: {'line': b"reading manifest file 'batrobot_msgs.egg-info/SOURCES.txt'\n"}
+[6.832646] (batrobot_msgs) StdoutLine: {'line': b"writing manifest file 'batrobot_msgs.egg-info/SOURCES.txt'\n"}
+[6.861388] (-) TimerEvent: {}
+[6.964427] (-) TimerEvent: {}
+[7.070376] (-) TimerEvent: {}
+[7.172097] (-) TimerEvent: {}
+[7.219369] (batrobot_msgs) StdoutLine: {'line': b'[ 70%] Built target ament_cmake_python_build_batrobot_msgs_egg\n'}
+[7.272359] (-) TimerEvent: {}
+[7.377431] (-) TimerEvent: {}
+[7.437956] (batrobot_msgs) StdoutLine: {'line': b'[ 70%] Built target batrobot_msgs\n'}
+[7.482537] (-) TimerEvent: {}
+[7.583220] (-) TimerEvent: {}
+[7.644854] (batrobot_msgs) StdoutLine: {'line': b'[ 74%] Built target batrobot_msgs__py\n'}
+[7.684442] (-) TimerEvent: {}
+[7.786418] (-) TimerEvent: {}
+[7.891424] (-) TimerEvent: {}
+[7.904393] (batrobot_msgs) StdoutLine: {'line': b'[ 80%] Built target batrobot_msgs__rosidl_generator_py\n'}
+[7.993159] (-) TimerEvent: {}
+[8.096283] (-) TimerEvent: {}
+[8.118373] (batrobot_msgs) StdoutLine: {'line': b'[ 87%] Built target batrobot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.196401] (-) TimerEvent: {}
+[8.300040] (-) TimerEvent: {}
+[8.330405] (batrobot_msgs) StdoutLine: {'line': b'[ 93%] Built target batrobot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.402708] (-) TimerEvent: {}
+[8.454600] (batrobot_firmware) StdoutLine: {'line': b'running egg_info\n'}
+[8.466425] (batrobot_firmware) StdoutLine: {'line': b'writing batrobot_firmware.egg-info/PKG-INFO\n'}
+[8.474311] (batrobot_firmware) StdoutLine: {'line': b'writing dependency_links to batrobot_firmware.egg-info/dependency_links.txt\n'}
+[8.482426] (batrobot_firmware) StdoutLine: {'line': b'writing top-level names to batrobot_firmware.egg-info/top_level.txt\n'}
+[8.503401] (-) TimerEvent: {}
+[8.520495] (batrobot_firmware) StdoutLine: {'line': b"reading manifest file 'batrobot_firmware.egg-info/SOURCES.txt'\n"}
+[8.528405] (batrobot_firmware) StdoutLine: {'line': b"writing manifest file 'batrobot_firmware.egg-info/SOURCES.txt'\n"}
+[8.552048] (batrobot_msgs) StdoutLine: {'line': b'[100%] Built target batrobot_msgs__rosidl_typesupport_c__pyext\n'}
+[8.604640] (-) TimerEvent: {}
+[8.685795] (batrobot_msgs) CommandEnded: {'returncode': 0}
+[8.695920] (batrobot_msgs) JobProgress: {'identifier': 'batrobot_msgs', 'progress': 'install'}
+[8.696120] (batrobot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_msgs'], 'cwd': '/home/naveen/bat_robot/build/batrobot_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[8.710861] (-) TimerEvent: {}
+[8.802226] (batrobot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.804877] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/rosidl_interfaces/batrobot_msgs\n'}
+[8.809061] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.812058] (-) TimerEvent: {}
+[8.816465] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg\n'}
+[8.816965] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.823564] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.823952] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/batrobot_task.h\n'}
+[8.824237] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.832475] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__functions.c\n'}
+[8.832869] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__functions.h\n'}
+[8.833165] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__struct.h\n'}
+[8.836748] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.h\n'}
+[8.837097] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/library_path.sh\n'}
+[8.843748] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/library_path.dsv\n'}
+[8.844134] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_generator_c.so\n'}
+[8.852013] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.860302] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg\n'}
+[8.864866] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.869475] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.875009] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.875526] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_fastrtps_c.h\n'}
+[8.875864] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.880369] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.884625] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg\n'}
+[8.885003] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.892588] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.893417] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/batrobot_task.hpp\n'}
+[8.893869] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.894127] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.hpp\n'}
+[8.897458] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__struct.hpp\n'}
+[8.897844] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__traits.hpp\n'}
+[8.898127] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__builder.hpp\n'}
+[8.905864] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.906858] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg\n'}
+[8.908822] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.909157] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.917386] (-) TimerEvent: {}
+[8.919403] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.924014] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/dds_fastrtps\n'}
+[8.932143] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.933812] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.934088] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.934441] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg\n'}
+[8.934766] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.935078] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.944544] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.944956] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.c\n'}
+[8.945298] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_introspection_c.h\n'}
+[8.945643] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.959761] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_c.so\n'}
+[8.960113] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs\n'}
+[8.964669] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action\n'}
+[8.965044] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail\n'}
+[8.968241] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__type_support.cpp\n'}
+[8.968751] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/include/batrobot_msgs/batrobot_msgs/action/detail/batrobot_task__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.968998] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.969214] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_typesupport_cpp.so\n'}
+[8.969568] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/pythonpath.sh\n'}
+[8.977597] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/pythonpath.dsv\n'}
+[8.977984] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info\n'}
+[8.978368] (batrobot_msgs) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.978743] (batrobot_msgs) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.979010] (batrobot_msgs) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.980517] (batrobot_msgs) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.981237] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs\n'}
+[8.985950] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/__init__.py\n'}
+[8.987488] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.988074] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.989596] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/libbatrobot_msgs__rosidl_generator_py.so\n'}
+[8.989926] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.990147] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[8.994763] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.995097] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action\n'}
+[8.995392] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/__init__.py\n'}
+[8.995844] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/_batrobot_task_s.c\n'}
+[8.996175] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action/_batrobot_task.py\n'}
+[8.999323] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/_batrobot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.002213] (batrobot_firmware) StdoutLine: {'line': b'Built target ament_cmake_python_build_batrobot_firmware_egg\n'}
+[9.018492] (-) TimerEvent: {}
+[9.043705] (batrobot_firmware) CommandEnded: {'returncode': 0}
+[9.052460] (batrobot_firmware) JobProgress: {'identifier': 'batrobot_firmware', 'progress': 'install'}
+[9.052717] (batrobot_firmware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_firmware'], 'cwd': '/home/naveen/bat_robot/build/batrobot_firmware', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_firmware'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[9.109578] (batrobot_firmware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.110133] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/pythonpath.sh\n'}
+[9.114851] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/pythonpath.dsv\n'}
+[9.115201] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info\n'}
+[9.118881] (-) TimerEvent: {}
+[9.121119] (batrobot_firmware) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[9.123035] (batrobot_firmware) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.125385] (batrobot_firmware) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[9.126039] (batrobot_firmware) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[9.126373] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware\n'}
+[9.126712] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/__init__.py\n'}
+[9.127009] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/simple_serial_reciever.py\n'}
+[9.127231] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware/simple_serial_transmitter.py\n'}
+[9.220835] (-) TimerEvent: {}
+[9.323591] (-) TimerEvent: {}
+[9.431416] (-) TimerEvent: {}
+[9.469542] (batrobot_msgs) StdoutLine: {'line': b"Listing '/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs'...\n"}
+[9.470094] (batrobot_msgs) StdoutLine: {'line': b"Listing '/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/action'...\n"}
+[9.524199] (batrobot_firmware) StdoutLine: {'line': b"Listing '/home/naveen/bat_robot/install/batrobot_firmware/local/lib/python3.10/dist-packages/batrobot_firmware'...\n"}
+[9.525963] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.529219] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.529717] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages/batrobot_msgs/batrobot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.533122] (-) TimerEvent: {}
+[9.536461] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/lib/libbatrobot_msgs__rosidl_generator_py.so\n'}
+[9.536930] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/action/BatrobotTask.idl\n'}
+[9.537198] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/action/BatrobotTask.action\n'}
+[9.537674] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/package_run_dependencies/batrobot_msgs\n'}
+[9.537992] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/parent_prefix_path/batrobot_msgs\n'}
+[9.545236] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.sh\n'}
+[9.547341] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/ament_prefix_path.dsv\n'}
+[9.551688] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.sh\n'}
+[9.552045] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/environment/path.dsv\n'}
+[9.555202] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.bash\n'}
+[9.558494] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.sh\n'}
+[9.558994] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.zsh\n'}
+[9.559241] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/local_setup.dsv\n'}
+[9.564640] (batrobot_msgs) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.dsv\n'}
+[9.569241] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/ament_index/resource_index/packages/batrobot_msgs\n'}
+[9.570447] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cExport.cmake\n'}
+[9.584865] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.585314] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.585635] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.585977] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.588715] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.589908] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.593419] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.593958] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.598392] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.598951] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.599191] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.599437] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.599688] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.599901] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.608977] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.609361] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/export_batrobot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.611080] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[9.613073] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.618053] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.618474] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.618846] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.619111] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.626983] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.627350] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig.cmake\n'}
+[9.627818] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/cmake/batrobot_msgsConfig-version.cmake\n'}
+[9.628193] (batrobot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.xml\n'}
+[9.642304] (-) TimerEvent: {}
+[9.642683] (batrobot_msgs) CommandEnded: {'returncode': 0}
+[9.649523] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/lib/batrobot_firmware/simple_serial_transmitter.py\n'}
+[9.649995] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/lib/batrobot_firmware/simple_serial_reciever.py\n'}
+[9.651154] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/package_run_dependencies/batrobot_firmware\n'}
+[9.653673] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/parent_prefix_path/batrobot_firmware\n'}
+[9.656431] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/ament_prefix_path.sh\n'}
+[9.663110] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/ament_prefix_path.dsv\n'}
+[9.663772] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/path.sh\n'}
+[9.666075] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/environment/path.dsv\n'}
+[9.666437] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.bash\n'}
+[9.666846] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.sh\n'}
+[9.667384] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.zsh\n'}
+[9.671552] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/local_setup.dsv\n'}
+[9.671955] (batrobot_firmware) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.dsv\n'}
+[9.672236] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/ament_index/resource_index/packages/batrobot_firmware\n'}
+[9.672563] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/cmake/batrobot_firmwareConfig.cmake\n'}
+[9.672837] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/cmake/batrobot_firmwareConfig-version.cmake\n'}
+[9.673038] (batrobot_firmware) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.xml\n'}
+[9.743420] (-) TimerEvent: {}
+[9.777311] (batrobot_msgs) JobEnded: {'identifier': 'batrobot_msgs', 'rc': 0}
+[9.779935] (batrobot_py_examples) JobStarted: {'identifier': 'batrobot_py_examples'}
+[9.834415] (batrobot_firmware) CommandEnded: {'returncode': 0}
+[9.843797] (-) TimerEvent: {}
+[9.925608] (batrobot_firmware) JobEnded: {'identifier': 'batrobot_firmware', 'rc': 0}
+[9.929778] (batrobot_alexa) JobStarted: {'identifier': 'batrobot_alexa'}
+[9.945934] (-) TimerEvent: {}
+[10.046556] (-) TimerEvent: {}
+[10.147531] (-) TimerEvent: {}
+[10.248797] (-) TimerEvent: {}
+[10.351142] (-) TimerEvent: {}
+[10.452961] (-) TimerEvent: {}
+[10.554746] (-) TimerEvent: {}
+[10.656667] (-) TimerEvent: {}
+[10.757911] (-) TimerEvent: {}
+[10.860427] (-) TimerEvent: {}
+[10.965409] (-) TimerEvent: {}
+[11.066003] (-) TimerEvent: {}
+[11.168460] (-) TimerEvent: {}
+[11.269431] (-) TimerEvent: {}
+[11.374764] (-) TimerEvent: {}
+[11.475399] (-) TimerEvent: {}
+[11.576016] (-) TimerEvent: {}
+[11.677781] (-) TimerEvent: {}
+[11.781229] (-) TimerEvent: {}
+[11.852188] (batrobot_alexa) JobProgress: {'identifier': 'batrobot_alexa', 'progress': 'cmake'}
+[11.857506] (batrobot_alexa) JobProgress: {'identifier': 'batrobot_alexa', 'progress': 'build'}
+[11.859980] (batrobot_alexa) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_alexa', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_alexa', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_alexa'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[11.881543] (-) TimerEvent: {}
+[11.990919] (-) TimerEvent: {}
+[12.093423] (-) TimerEvent: {}
+[12.193962] (-) TimerEvent: {}
+[12.298981] (-) TimerEvent: {}
+[12.376562] (batrobot_alexa) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target task_server\x1b[0m\n'}
+[12.400441] (-) TimerEvent: {}
+[12.501439] (-) TimerEvent: {}
+[12.603838] (-) TimerEvent: {}
+[12.673697] (batrobot_alexa) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o\x1b[0m\n'}
+[12.705917] (-) TimerEvent: {}
+[12.807364] (-) TimerEvent: {}
+[12.910990] (-) TimerEvent: {}
+[13.015186] (-) TimerEvent: {}
+[13.117705] (-) TimerEvent: {}
+[13.222534] (-) TimerEvent: {}
+[13.326310] (-) TimerEvent: {}
+[13.430066] (-) TimerEvent: {}
+[13.535553] (-) TimerEvent: {}
+[13.640369] (-) TimerEvent: {}
+[13.740945] (-) TimerEvent: {}
+[13.844424] (-) TimerEvent: {}
+[13.951398] (-) TimerEvent: {}
+[14.052108] (-) TimerEvent: {}
+[14.153407] (-) TimerEvent: {}
+[14.256703] (-) TimerEvent: {}
+[14.359367] (-) TimerEvent: {}
+[14.461379] (-) TimerEvent: {}
+[14.564366] (-) TimerEvent: {}
+[14.669722] (-) TimerEvent: {}
+[14.773039] (-) TimerEvent: {}
+[14.876553] (-) TimerEvent: {}
+[14.979409] (-) TimerEvent: {}
+[15.083862] (-) TimerEvent: {}
+[15.185468] (-) TimerEvent: {}
+[15.291967] (-) TimerEvent: {}
+[15.393558] (-) TimerEvent: {}
+[15.498727] (-) TimerEvent: {}
+[15.603343] (-) TimerEvent: {}
+[15.706390] (-) TimerEvent: {}
+[15.807037] (-) TimerEvent: {}
+[15.913374] (-) TimerEvent: {}
+[16.016708] (-) TimerEvent: {}
+[16.123533] (-) TimerEvent: {}
+[16.227405] (-) TimerEvent: {}
+[16.329383] (-) TimerEvent: {}
+[16.433893] (-) TimerEvent: {}
+[16.541027] (-) TimerEvent: {}
+[16.643697] (-) TimerEvent: {}
+[16.749372] (-) TimerEvent: {}
+[16.853034] (-) TimerEvent: {}
+[16.953738] (-) TimerEvent: {}
+[17.000520] (batrobot_py_examples) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/batrobot_py_examples', 'build', '--build-base', '/home/naveen/bat_robot/build/batrobot_py_examples/build', 'install', '--record', '/home/naveen/bat_robot/build/batrobot_py_examples/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/naveen/bat_robot/src/batrobot_py_examples', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'naveen', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/naveen', 'OLDPWD': '/home/naveen', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1429', 'SYSTEMD_EXEC_PID': '1596', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8298', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/naveen/roarm_ws_em0/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'naveen', 'JOURNAL_STREAM': '8:12090', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'naveen', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558', 'INVOCATION_ID': '011b8610f1bd4ffc8302fe18f8791d9a', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_IN', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4J4972', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/naveen/bat_robot/build/batrobot_py_examples', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/naveen/bat_robot/build/batrobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration'}, 'shell': False}
+[17.053897] (-) TimerEvent: {}
+[17.157644] (-) TimerEvent: {}
+[17.259873] (-) TimerEvent: {}
+[17.365347] (-) TimerEvent: {}
+[17.471473] (-) TimerEvent: {}
+[17.575368] (-) TimerEvent: {}
+[17.676606] (-) TimerEvent: {}
+[17.785403] (-) TimerEvent: {}
+[17.888360] (-) TimerEvent: {}
+[17.989426] (-) TimerEvent: {}
+[18.092380] (-) TimerEvent: {}
+[18.198584] (-) TimerEvent: {}
+[18.299189] (-) TimerEvent: {}
+[18.404391] (-) TimerEvent: {}
+[18.507850] (-) TimerEvent: {}
+[18.608610] (-) TimerEvent: {}
+[18.711622] (-) TimerEvent: {}
+[18.815389] (-) TimerEvent: {}
+[18.921717] (-) TimerEvent: {}
+[19.024170] (-) TimerEvent: {}
+[19.126722] (-) TimerEvent: {}
+[19.230035] (-) TimerEvent: {}
+[19.334456] (-) TimerEvent: {}
+[19.437881] (-) TimerEvent: {}
+[19.539577] (-) TimerEvent: {}
+[19.642996] (-) TimerEvent: {}
+[19.745733] (-) TimerEvent: {}
+[19.852388] (-) TimerEvent: {}
+[19.955394] (-) TimerEvent: {}
+[20.058114] (-) TimerEvent: {}
+[20.168520] (-) TimerEvent: {}
+[20.269064] (-) TimerEvent: {}
+[20.371063] (-) TimerEvent: {}
+[20.472315] (-) TimerEvent: {}
+[20.533138] (batrobot_py_examples) StdoutLine: {'line': b'running egg_info\n'}
+[20.549375] (batrobot_py_examples) StdoutLine: {'line': b'writing ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/PKG-INFO\n'}
+[20.550705] (batrobot_py_examples) StdoutLine: {'line': b'writing dependency_links to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/dependency_links.txt\n'}
+[20.551014] (batrobot_py_examples) StdoutLine: {'line': b'writing entry points to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/entry_points.txt\n'}
+[20.558419] (batrobot_py_examples) StdoutLine: {'line': b'writing requirements to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/requires.txt\n'}
+[20.558854] (batrobot_py_examples) StdoutLine: {'line': b'writing top-level names to ../../build/batrobot_py_examples/batrobot_py_examples.egg-info/top_level.txt\n'}
+[20.576562] (-) TimerEvent: {}
+[20.585567] (batrobot_py_examples) StdoutLine: {'line': b"reading manifest file '../../build/batrobot_py_examples/batrobot_py_examples.egg-info/SOURCES.txt'\n"}
+[20.594382] (batrobot_py_examples) StdoutLine: {'line': b"writing manifest file '../../build/batrobot_py_examples/batrobot_py_examples.egg-info/SOURCES.txt'\n"}
+[20.597606] (batrobot_py_examples) StdoutLine: {'line': b'running build\n'}
+[20.598014] (batrobot_py_examples) StdoutLine: {'line': b'running build_py\n'}
+[20.601539] (batrobot_py_examples) StdoutLine: {'line': b'running install\n'}
+[20.606305] (batrobot_py_examples) StdoutLine: {'line': b'running install_lib\n'}
+[20.628387] (batrobot_py_examples) StdoutLine: {'line': b'running install_data\n'}
+[20.628838] (batrobot_py_examples) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.651695] (batrobot_py_examples) StdoutLine: {'line': b"removing '/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages/batrobot_py_examples-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[20.664746] (batrobot_py_examples) StdoutLine: {'line': b'Copying ../../build/batrobot_py_examples/batrobot_py_examples.egg-info to /home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages/batrobot_py_examples-0.0.0-py3.10.egg-info\n'}
+[20.672998] (batrobot_py_examples) StdoutLine: {'line': b'running install_scripts\n'}
+[20.683657] (-) TimerEvent: {}
+[20.785683] (-) TimerEvent: {}
+[20.888879] (-) TimerEvent: {}
+[20.924393] (batrobot_py_examples) StdoutLine: {'line': b"writing list of installed files to '/home/naveen/bat_robot/build/batrobot_py_examples/install.log'\n"}
+[20.989045] (-) TimerEvent: {}
+[21.090979] (-) TimerEvent: {}
+[21.198402] (-) TimerEvent: {}
+[21.230130] (batrobot_py_examples) CommandEnded: {'returncode': 0}
+[21.301578] (-) TimerEvent: {}
+[21.336110] (batrobot_py_examples) JobEnded: {'identifier': 'batrobot_py_examples', 'rc': 0}
+[21.337788] (batrobot_bringup) JobStarted: {'identifier': 'batrobot_bringup'}
+[21.407988] (-) TimerEvent: {}
+[21.484299] (batrobot_bringup) JobProgress: {'identifier': 'batrobot_bringup', 'progress': 'cmake'}
+[21.492966] (batrobot_bringup) JobProgress: {'identifier': 'batrobot_bringup', 'progress': 'build'}
+[21.493271] (batrobot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/naveen/bat_robot/build/batrobot_bringup', '--', '-j2', '-l2'], 'cwd': '/home/naveen/bat_robot/build/batrobot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[21.510614] (-) TimerEvent: {}
+[21.613239] (-) TimerEvent: {}
+[21.715411] (-) TimerEvent: {}
+[21.821397] (-) TimerEvent: {}
+[21.890130] (batrobot_bringup) CommandEnded: {'returncode': 0}
+[21.896669] (batrobot_bringup) JobProgress: {'identifier': 'batrobot_bringup', 'progress': 'install'}
+[21.904798] (batrobot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_bringup'], 'cwd': '/home/naveen/bat_robot/build/batrobot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[21.927003] (-) TimerEvent: {}
+[21.949841] (batrobot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.954446] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/launch\n'}
+[21.956968] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/launch/simulated_robot.launch.py\n'}
+[21.957370] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/launch/real_robot.launch.py\n'}
+[21.965787] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/package_run_dependencies/batrobot_bringup\n'}
+[21.966081] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/parent_prefix_path/batrobot_bringup\n'}
+[21.966358] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/ament_prefix_path.sh\n'}
+[21.966628] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/ament_prefix_path.dsv\n'}
+[21.966892] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/path.sh\n'}
+[21.973911] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/environment/path.dsv\n'}
+[21.976272] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.bash\n'}
+[21.976604] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.sh\n'}
+[21.980528] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.zsh\n'}
+[21.980964] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/local_setup.dsv\n'}
+[21.981243] (batrobot_bringup) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.dsv\n'}
+[21.984534] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/ament_index/resource_index/packages/batrobot_bringup\n'}
+[21.991039] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/cmake/batrobot_bringupConfig.cmake\n'}
+[21.991491] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/cmake/batrobot_bringupConfig-version.cmake\n'}
+[21.991787] (batrobot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.xml\n'}
+[21.992052] (batrobot_bringup) CommandEnded: {'returncode': 0}
+[22.032560] (-) TimerEvent: {}
+[22.137632] (-) TimerEvent: {}
+[22.173702] (batrobot_bringup) JobEnded: {'identifier': 'batrobot_bringup', 'rc': 0}
+[22.240400] (-) TimerEvent: {}
+[22.341399] (-) TimerEvent: {}
+[22.443541] (-) TimerEvent: {}
+[22.544096] (-) TimerEvent: {}
+[22.646372] (-) TimerEvent: {}
+[22.747644] (-) TimerEvent: {}
+[22.848178] (-) TimerEvent: {}
+[22.950262] (-) TimerEvent: {}
+[23.053234] (-) TimerEvent: {}
+[23.155195] (-) TimerEvent: {}
+[23.257874] (-) TimerEvent: {}
+[23.359392] (-) TimerEvent: {}
+[23.465318] (-) TimerEvent: {}
+[23.567950] (-) TimerEvent: {}
+[23.669401] (-) TimerEvent: {}
+[23.770283] (-) TimerEvent: {}
+[23.872651] (-) TimerEvent: {}
+[23.976690] (-) TimerEvent: {}
+[24.077519] (-) TimerEvent: {}
+[24.178386] (-) TimerEvent: {}
+[24.280585] (-) TimerEvent: {}
+[24.383668] (-) TimerEvent: {}
+[24.485854] (-) TimerEvent: {}
+[24.587450] (-) TimerEvent: {}
+[24.688045] (-) TimerEvent: {}
+[24.790582] (-) TimerEvent: {}
+[24.891598] (-) TimerEvent: {}
+[24.992164] (-) TimerEvent: {}
+[25.094775] (-) TimerEvent: {}
+[25.196551] (-) TimerEvent: {}
+[25.298184] (-) TimerEvent: {}
+[25.401048] (-) TimerEvent: {}
+[25.501927] (-) TimerEvent: {}
+[25.602917] (-) TimerEvent: {}
+[25.705382] (-) TimerEvent: {}
+[25.807389] (-) TimerEvent: {}
+[25.910761] (-) TimerEvent: {}
+[26.012373] (-) TimerEvent: {}
+[26.114234] (-) TimerEvent: {}
+[26.218382] (-) TimerEvent: {}
+[26.321631] (-) TimerEvent: {}
+[26.423384] (-) TimerEvent: {}
+[26.524377] (-) TimerEvent: {}
+[26.626902] (-) TimerEvent: {}
+[26.730130] (-) TimerEvent: {}
+[26.830712] (-) TimerEvent: {}
+[26.931509] (-) TimerEvent: {}
+[27.033398] (-) TimerEvent: {}
+[27.135620] (-) TimerEvent: {}
+[27.236523] (-) TimerEvent: {}
+[27.339009] (-) TimerEvent: {}
+[27.439846] (-) TimerEvent: {}
+[27.540610] (-) TimerEvent: {}
+[27.644514] (-) TimerEvent: {}
+[27.745538] (-) TimerEvent: {}
+[27.846239] (-) TimerEvent: {}
+[27.948614] (-) TimerEvent: {}
+[28.050379] (-) TimerEvent: {}
+[28.151069] (-) TimerEvent: {}
+[28.253683] (-) TimerEvent: {}
+[28.355396] (-) TimerEvent: {}
+[28.456190] (-) TimerEvent: {}
+[28.557475] (-) TimerEvent: {}
+[28.659975] (-) TimerEvent: {}
+[28.760570] (-) TimerEvent: {}
+[28.863386] (-) TimerEvent: {}
+[28.964111] (-) TimerEvent: {}
+[29.064710] (-) TimerEvent: {}
+[29.165379] (-) TimerEvent: {}
+[29.268295] (-) TimerEvent: {}
+[29.370379] (-) TimerEvent: {}
+[29.472216] (-) TimerEvent: {}
+[29.574388] (-) TimerEvent: {}
+[29.676368] (-) TimerEvent: {}
+[29.777858] (-) TimerEvent: {}
+[29.881392] (-) TimerEvent: {}
+[29.983375] (-) TimerEvent: {}
+[30.084047] (-) TimerEvent: {}
+[30.188706] (-) TimerEvent: {}
+[30.289262] (-) TimerEvent: {}
+[30.392079] (-) TimerEvent: {}
+[30.494149] (-) TimerEvent: {}
+[30.595728] (-) TimerEvent: {}
+[30.701367] (-) TimerEvent: {}
+[30.804385] (-) TimerEvent: {}
+[30.912418] (-) TimerEvent: {}
+[31.015000] (-) TimerEvent: {}
+[31.115842] (-) TimerEvent: {}
+[31.217321] (-) TimerEvent: {}
+[31.320535] (-) TimerEvent: {}
+[31.422434] (-) TimerEvent: {}
+[31.523002] (-) TimerEvent: {}
+[31.625399] (-) TimerEvent: {}
+[31.727566] (-) TimerEvent: {}
+[31.828395] (-) TimerEvent: {}
+[31.930469] (-) TimerEvent: {}
+[32.033763] (-) TimerEvent: {}
+[32.137400] (-) TimerEvent: {}
+[32.238012] (-) TimerEvent: {}
+[32.341301] (-) TimerEvent: {}
+[32.444005] (-) TimerEvent: {}
+[32.547398] (-) TimerEvent: {}
+[32.648313] (-) TimerEvent: {}
+[32.748897] (-) TimerEvent: {}
+[32.849445] (-) TimerEvent: {}
+[32.950121] (-) TimerEvent: {}
+[33.051883] (-) TimerEvent: {}
+[33.154691] (-) TimerEvent: {}
+[33.255243] (-) TimerEvent: {}
+[33.355816] (-) TimerEvent: {}
+[33.456525] (-) TimerEvent: {}
+[33.558688] (-) TimerEvent: {}
+[33.659227] (-) TimerEvent: {}
+[33.762386] (-) TimerEvent: {}
+[33.865379] (-) TimerEvent: {}
+[33.965959] (-) TimerEvent: {}
+[34.066555] (-) TimerEvent: {}
+[34.167118] (-) TimerEvent: {}
+[34.270267] (-) TimerEvent: {}
+[34.370970] (-) TimerEvent: {}
+[34.471539] (-) TimerEvent: {}
+[34.574589] (-) TimerEvent: {}
+[34.676882] (-) TimerEvent: {}
+[34.777381] (-) TimerEvent: {}
+[34.880536] (-) TimerEvent: {}
+[34.981308] (-) TimerEvent: {}
+[35.081995] (-) TimerEvent: {}
+[35.183781] (-) TimerEvent: {}
+[35.285359] (-) TimerEvent: {}
+[35.388276] (-) TimerEvent: {}
+[35.488820] (-) TimerEvent: {}
+[35.589536] (-) TimerEvent: {}
+[35.692867] (-) TimerEvent: {}
+[35.793639] (-) TimerEvent: {}
+[35.894365] (-) TimerEvent: {}
+[35.995082] (-) TimerEvent: {}
+[36.096864] (-) TimerEvent: {}
+[36.197784] (-) TimerEvent: {}
+[36.299832] (-) TimerEvent: {}
+[36.402098] (-) TimerEvent: {}
+[36.504377] (-) TimerEvent: {}
+[36.605534] (-) TimerEvent: {}
+[36.706492] (-) TimerEvent: {}
+[36.809423] (-) TimerEvent: {}
+[36.912752] (-) TimerEvent: {}
+[37.015824] (-) TimerEvent: {}
+[37.116383] (-) TimerEvent: {}
+[37.219854] (-) TimerEvent: {}
+[37.320973] (-) TimerEvent: {}
+[37.422011] (-) TimerEvent: {}
+[37.526383] (-) TimerEvent: {}
+[37.627023] (-) TimerEvent: {}
+[37.729402] (-) TimerEvent: {}
+[37.830107] (-) TimerEvent: {}
+[37.931053] (-) TimerEvent: {}
+[38.033999] (-) TimerEvent: {}
+[38.134588] (-) TimerEvent: {}
+[38.235621] (-) TimerEvent: {}
+[38.339168] (-) TimerEvent: {}
+[38.441409] (-) TimerEvent: {}
+[38.541972] (-) TimerEvent: {}
+[38.643677] (-) TimerEvent: {}
+[38.744686] (-) TimerEvent: {}
+[38.847698] (-) TimerEvent: {}
+[38.948928] (-) TimerEvent: {}
+[39.050533] (-) TimerEvent: {}
+[39.151371] (-) TimerEvent: {}
+[39.254379] (-) TimerEvent: {}
+[39.354943] (-) TimerEvent: {}
+[39.455869] (-) TimerEvent: {}
+[39.559723] (-) TimerEvent: {}
+[39.661445] (-) TimerEvent: {}
+[39.762362] (-) TimerEvent: {}
+[39.863521] (-) TimerEvent: {}
+[39.965576] (-) TimerEvent: {}
+[40.067598] (-) TimerEvent: {}
+[40.168092] (-) TimerEvent: {}
+[40.270230] (-) TimerEvent: {}
+[40.371601] (-) TimerEvent: {}
+[40.473372] (-) TimerEvent: {}
+[40.574596] (-) TimerEvent: {}
+[40.676756] (-) TimerEvent: {}
+[40.777454] (-) TimerEvent: {}
+[40.879829] (-) TimerEvent: {}
+[40.980386] (-) TimerEvent: {}
+[41.083412] (-) TimerEvent: {}
+[41.184761] (-) TimerEvent: {}
+[41.285586] (-) TimerEvent: {}
+[41.386754] (-) TimerEvent: {}
+[41.487670] (-) TimerEvent: {}
+[41.589953] (-) TimerEvent: {}
+[41.692145] (-) TimerEvent: {}
+[41.795367] (-) TimerEvent: {}
+[41.898728] (-) TimerEvent: {}
+[41.999340] (-) TimerEvent: {}
+[42.099876] (-) TimerEvent: {}
+[42.203639] (-) TimerEvent: {}
+[42.304718] (-) TimerEvent: {}
+[42.406147] (-) TimerEvent: {}
+[42.507178] (-) TimerEvent: {}
+[42.609382] (-) TimerEvent: {}
+[42.710268] (-) TimerEvent: {}
+[42.810902] (-) TimerEvent: {}
+[42.912406] (-) TimerEvent: {}
+[43.013415] (-) TimerEvent: {}
+[43.115692] (-) TimerEvent: {}
+[43.217603] (-) TimerEvent: {}
+[43.319397] (-) TimerEvent: {}
+[43.420398] (-) TimerEvent: {}
+[43.522706] (-) TimerEvent: {}
+[43.623582] (-) TimerEvent: {}
+[43.725377] (-) TimerEvent: {}
+[43.826994] (-) TimerEvent: {}
+[43.929360] (-) TimerEvent: {}
+[44.030376] (-) TimerEvent: {}
+[44.131364] (-) TimerEvent: {}
+[44.233968] (-) TimerEvent: {}
+[44.335168] (-) TimerEvent: {}
+[44.437354] (-) TimerEvent: {}
+[44.538370] (-) TimerEvent: {}
+[44.638982] (-) TimerEvent: {}
+[44.741078] (-) TimerEvent: {}
+[44.845053] (-) TimerEvent: {}
+[44.945763] (-) TimerEvent: {}
+[45.046816] (-) TimerEvent: {}
+[45.148486] (-) TimerEvent: {}
+[45.249520] (-) TimerEvent: {}
+[45.351717] (-) TimerEvent: {}
+[45.453080] (-) TimerEvent: {}
+[45.554373] (-) TimerEvent: {}
+[45.655925] (-) TimerEvent: {}
+[45.757473] (-) TimerEvent: {}
+[45.860380] (-) TimerEvent: {}
+[45.960942] (-) TimerEvent: {}
+[46.063867] (-) TimerEvent: {}
+[46.166706] (-) TimerEvent: {}
+[46.267316] (-) TimerEvent: {}
+[46.372620] (-) TimerEvent: {}
+[46.473447] (-) TimerEvent: {}
+[46.574821] (-) TimerEvent: {}
+[46.678858] (-) TimerEvent: {}
+[46.779382] (-) TimerEvent: {}
+[46.880283] (-) TimerEvent: {}
+[46.981559] (-) TimerEvent: {}
+[47.085472] (-) TimerEvent: {}
+[47.187486] (-) TimerEvent: {}
+[47.289507] (-) TimerEvent: {}
+[47.390747] (-) TimerEvent: {}
+[47.492551] (-) TimerEvent: {}
+[47.596118] (-) TimerEvent: {}
+[47.697276] (-) TimerEvent: {}
+[47.798144] (-) TimerEvent: {}
+[47.898667] (-) TimerEvent: {}
+[48.000812] (-) TimerEvent: {}
+[48.101729] (-) TimerEvent: {}
+[48.205275] (-) TimerEvent: {}
+[48.305890] (-) TimerEvent: {}
+[48.408631] (-) TimerEvent: {}
+[48.509920] (-) TimerEvent: {}
+[48.612381] (-) TimerEvent: {}
+[48.714607] (-) TimerEvent: {}
+[48.815579] (-) TimerEvent: {}
+[48.918777] (-) TimerEvent: {}
+[49.019783] (-) TimerEvent: {}
+[49.121485] (-) TimerEvent: {}
+[49.222576] (-) TimerEvent: {}
+[49.324552] (-) TimerEvent: {}
+[49.426456] (-) TimerEvent: {}
+[49.530375] (-) TimerEvent: {}
+[49.631011] (-) TimerEvent: {}
+[49.733550] (-) TimerEvent: {}
+[49.835140] (-) TimerEvent: {}
+[49.937124] (-) TimerEvent: {}
+[50.038374] (-) TimerEvent: {}
+[50.139302] (-) TimerEvent: {}
+[50.241440] (-) TimerEvent: {}
+[50.342003] (-) TimerEvent: {}
+[50.446909] (-) TimerEvent: {}
+[50.547622] (-) TimerEvent: {}
+[50.648267] (-) TimerEvent: {}
+[50.749395] (-) TimerEvent: {}
+[50.849909] (-) TimerEvent: {}
+[50.951203] (-) TimerEvent: {}
+[51.052827] (-) TimerEvent: {}
+[51.154435] (-) TimerEvent: {}
+[51.256021] (-) TimerEvent: {}
+[51.356573] (-) TimerEvent: {}
+[51.457535] (-) TimerEvent: {}
+[51.558117] (-) TimerEvent: {}
+[51.659518] (-) TimerEvent: {}
+[51.760379] (-) TimerEvent: {}
+[51.860914] (-) TimerEvent: {}
+[51.961451] (-) TimerEvent: {}
+[52.062124] (-) TimerEvent: {}
+[52.163407] (-) TimerEvent: {}
+[52.264497] (-) TimerEvent: {}
+[52.364999] (-) TimerEvent: {}
+[52.466033] (-) TimerEvent: {}
+[52.566586] (-) TimerEvent: {}
+[52.668351] (-) TimerEvent: {}
+[52.770560] (-) TimerEvent: {}
+[52.871506] (-) TimerEvent: {}
+[52.972622] (-) TimerEvent: {}
+[53.074897] (-) TimerEvent: {}
+[53.175472] (-) TimerEvent: {}
+[53.276108] (-) TimerEvent: {}
+[53.376706] (-) TimerEvent: {}
+[53.477901] (-) TimerEvent: {}
+[53.578463] (-) TimerEvent: {}
+[53.681044] (-) TimerEvent: {}
+[53.783478] (-) TimerEvent: {}
+[53.884068] (-) TimerEvent: {}
+[53.984993] (-) TimerEvent: {}
+[54.086306] (-) TimerEvent: {}
+[54.186892] (-) TimerEvent: {}
+[54.288072] (-) TimerEvent: {}
+[54.388671] (-) TimerEvent: {}
+[54.489986] (-) TimerEvent: {}
+[54.591236] (-) TimerEvent: {}
+[54.694414] (-) TimerEvent: {}
+[54.795025] (-) TimerEvent: {}
+[54.896100] (-) TimerEvent: {}
+[54.996669] (-) TimerEvent: {}
+[55.097271] (-) TimerEvent: {}
+[55.199533] (-) TimerEvent: {}
+[55.301201] (-) TimerEvent: {}
+[55.401762] (-) TimerEvent: {}
+[55.502389] (-) TimerEvent: {}
+[55.602920] (-) TimerEvent: {}
+[55.704204] (-) TimerEvent: {}
+[55.805013] (-) TimerEvent: {}
+[55.908389] (-) TimerEvent: {}
+[56.008996] (-) TimerEvent: {}
+[56.109632] (-) TimerEvent: {}
+[56.212410] (-) TimerEvent: {}
+[56.313017] (-) TimerEvent: {}
+[56.413561] (-) TimerEvent: {}
+[56.514205] (-) TimerEvent: {}
+[56.615088] (-) TimerEvent: {}
+[56.716034] (-) TimerEvent: {}
+[56.818386] (-) TimerEvent: {}
+[56.918983] (-) TimerEvent: {}
+[57.019573] (-) TimerEvent: {}
+[57.120487] (-) TimerEvent: {}
+[57.221351] (-) TimerEvent: {}
+[57.321887] (-) TimerEvent: {}
+[57.423119] (-) TimerEvent: {}
+[57.523738] (-) TimerEvent: {}
+[57.624401] (-) TimerEvent: {}
+[57.724968] (-) TimerEvent: {}
+[57.828284] (-) TimerEvent: {}
+[57.932450] (-) TimerEvent: {}
+[58.033566] (-) TimerEvent: {}
+[58.139427] (-) TimerEvent: {}
+[58.159004] (batrobot_alexa) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libtask_server.so\x1b[0m\n'}
+[58.241069] (-) TimerEvent: {}
+[58.341691] (-) TimerEvent: {}
+[58.442327] (-) TimerEvent: {}
+[58.543713] (-) TimerEvent: {}
+[58.647178] (-) TimerEvent: {}
+[58.749549] (-) TimerEvent: {}
+[58.852043] (-) TimerEvent: {}
+[58.956291] (-) TimerEvent: {}
+[59.060651] (-) TimerEvent: {}
+[59.161895] (-) TimerEvent: {}
+[59.265172] (-) TimerEvent: {}
+[59.368552] (-) TimerEvent: {}
+[59.470737] (-) TimerEvent: {}
+[59.573424] (-) TimerEvent: {}
+[59.674378] (-) TimerEvent: {}
+[59.776479] (-) TimerEvent: {}
+[59.877852] (-) TimerEvent: {}
+[59.978390] (-) TimerEvent: {}
+[60.078969] (-) TimerEvent: {}
+[60.181435] (-) TimerEvent: {}
+[60.281950] (-) TimerEvent: {}
+[60.385426] (-) TimerEvent: {}
+[60.488722] (-) TimerEvent: {}
+[60.499177] (batrobot_alexa) StdoutLine: {'line': b'[ 50%] Built target task_server\n'}
+[60.592577] (-) TimerEvent: {}
+[60.595520] (batrobot_alexa) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/task_server_node.dir/rclcpp_components/node_main_task_server_node.cpp.o\x1b[0m\n'}
+[60.695706] (-) TimerEvent: {}
+[60.796324] (-) TimerEvent: {}
+[60.897111] (-) TimerEvent: {}
+[60.998636] (-) TimerEvent: {}
+[61.100436] (-) TimerEvent: {}
+[61.201998] (-) TimerEvent: {}
+[61.303824] (-) TimerEvent: {}
+[61.404601] (-) TimerEvent: {}
+[61.508411] (-) TimerEvent: {}
+[61.609414] (-) TimerEvent: {}
+[61.710845] (-) TimerEvent: {}
+[61.813656] (-) TimerEvent: {}
+[61.916324] (-) TimerEvent: {}
+[62.016866] (-) TimerEvent: {}
+[62.117711] (-) TimerEvent: {}
+[62.218553] (-) TimerEvent: {}
+[62.321903] (-) TimerEvent: {}
+[62.423873] (-) TimerEvent: {}
+[62.525947] (-) TimerEvent: {}
+[62.627521] (-) TimerEvent: {}
+[62.728888] (-) TimerEvent: {}
+[62.837857] (-) TimerEvent: {}
+[62.942904] (-) TimerEvent: {}
+[63.047187] (-) TimerEvent: {}
+[63.148627] (-) TimerEvent: {}
+[63.250669] (-) TimerEvent: {}
+[63.352452] (-) TimerEvent: {}
+[63.459569] (-) TimerEvent: {}
+[63.560110] (-) TimerEvent: {}
+[63.662940] (-) TimerEvent: {}
+[63.763484] (-) TimerEvent: {}
+[63.864419] (-) TimerEvent: {}
+[63.965065] (-) TimerEvent: {}
+[64.065709] (-) TimerEvent: {}
+[64.166328] (-) TimerEvent: {}
+[64.266873] (-) TimerEvent: {}
+[64.367515] (-) TimerEvent: {}
+[64.468156] (-) TimerEvent: {}
+[64.568774] (-) TimerEvent: {}
+[64.675447] (-) TimerEvent: {}
+[64.776714] (-) TimerEvent: {}
+[64.877922] (-) TimerEvent: {}
+[64.978515] (-) TimerEvent: {}
+[65.079219] (-) TimerEvent: {}
+[65.182509] (-) TimerEvent: {}
+[65.283465] (-) TimerEvent: {}
+[65.384733] (-) TimerEvent: {}
+[65.486277] (-) TimerEvent: {}
+[65.586835] (-) TimerEvent: {}
+[65.688038] (-) TimerEvent: {}
+[65.789614] (-) TimerEvent: {}
+[65.890803] (-) TimerEvent: {}
+[65.992081] (-) TimerEvent: {}
+[66.094198] (-) TimerEvent: {}
+[66.195133] (-) TimerEvent: {}
+[66.299557] (-) TimerEvent: {}
+[66.401096] (-) TimerEvent: {}
+[66.503219] (-) TimerEvent: {}
+[66.604950] (-) TimerEvent: {}
+[66.708396] (-) TimerEvent: {}
+[66.811536] (-) TimerEvent: {}
+[66.912995] (-) TimerEvent: {}
+[67.013843] (-) TimerEvent: {}
+[67.115347] (-) TimerEvent: {}
+[67.216373] (-) TimerEvent: {}
+[67.316929] (-) TimerEvent: {}
+[67.417652] (-) TimerEvent: {}
+[67.518378] (-) TimerEvent: {}
+[67.619160] (-) TimerEvent: {}
+[67.719692] (-) TimerEvent: {}
+[67.820270] (-) TimerEvent: {}
+[67.921024] (-) TimerEvent: {}
+[68.022343] (-) TimerEvent: {}
+[68.123867] (-) TimerEvent: {}
+[68.224395] (-) TimerEvent: {}
+[68.324955] (-) TimerEvent: {}
+[68.425605] (-) TimerEvent: {}
+[68.527505] (-) TimerEvent: {}
+[68.628024] (-) TimerEvent: {}
+[68.729210] (-) TimerEvent: {}
+[68.829890] (-) TimerEvent: {}
+[68.930461] (-) TimerEvent: {}
+[69.031545] (-) TimerEvent: {}
+[69.132689] (-) TimerEvent: {}
+[69.234210] (-) TimerEvent: {}
+[69.336868] (-) TimerEvent: {}
+[69.437477] (-) TimerEvent: {}
+[69.538029] (-) TimerEvent: {}
+[69.639762] (-) TimerEvent: {}
+[69.742230] (-) TimerEvent: {}
+[69.842790] (-) TimerEvent: {}
+[69.943369] (-) TimerEvent: {}
+[70.044501] (-) TimerEvent: {}
+[70.145033] (-) TimerEvent: {}
+[70.245607] (-) TimerEvent: {}
+[70.346178] (-) TimerEvent: {}
+[70.447126] (-) TimerEvent: {}
+[70.547696] (-) TimerEvent: {}
+[70.649134] (-) TimerEvent: {}
+[70.754891] (-) TimerEvent: {}
+[70.855985] (-) TimerEvent: {}
+[70.961542] (-) TimerEvent: {}
+[71.062088] (-) TimerEvent: {}
+[71.164214] (-) TimerEvent: {}
+[71.264830] (-) TimerEvent: {}
+[71.365374] (-) TimerEvent: {}
+[71.466008] (-) TimerEvent: {}
+[71.566586] (-) TimerEvent: {}
+[71.667734] (-) TimerEvent: {}
+[71.768350] (-) TimerEvent: {}
+[71.870702] (-) TimerEvent: {}
+[71.972035] (-) TimerEvent: {}
+[72.072582] (-) TimerEvent: {}
+[72.174487] (-) TimerEvent: {}
+[72.276413] (-) TimerEvent: {}
+[72.376972] (-) TimerEvent: {}
+[72.477548] (-) TimerEvent: {}
+[72.578146] (-) TimerEvent: {}
+[72.650562] (batrobot_alexa) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable task_server_node\x1b[0m\n'}
+[72.678357] (-) TimerEvent: {}
+[72.779736] (-) TimerEvent: {}
+[72.883369] (-) TimerEvent: {}
+[72.984124] (-) TimerEvent: {}
+[73.087648] (-) TimerEvent: {}
+[73.189043] (-) TimerEvent: {}
+[73.292362] (-) TimerEvent: {}
+[73.303516] (batrobot_alexa) StdoutLine: {'line': b'[100%] Built target task_server_node\n'}
+[73.392517] (-) TimerEvent: {}
+[73.470091] (batrobot_alexa) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_batrobot_alexa\n'}
+[73.494436] (-) TimerEvent: {}
+[73.601182] (-) TimerEvent: {}
+[73.705047] (-) TimerEvent: {}
+[73.805638] (-) TimerEvent: {}
+[73.906281] (-) TimerEvent: {}
+[74.007372] (-) TimerEvent: {}
+[74.108361] (-) TimerEvent: {}
+[74.210570] (-) TimerEvent: {}
+[74.312065] (-) TimerEvent: {}
+[74.414522] (-) TimerEvent: {}
+[74.516300] (-) TimerEvent: {}
+[74.616985] (-) TimerEvent: {}
+[74.720571] (-) TimerEvent: {}
+[74.821186] (-) TimerEvent: {}
+[74.922198] (-) TimerEvent: {}
+[75.024440] (-) TimerEvent: {}
+[75.125538] (-) TimerEvent: {}
+[75.229847] (-) TimerEvent: {}
+[75.331542] (-) TimerEvent: {}
+[75.435159] (-) TimerEvent: {}
+[75.472556] (batrobot_alexa) StdoutLine: {'line': b'running egg_info\n'}
+[75.477028] (batrobot_alexa) StdoutLine: {'line': b'creating batrobot_alexa.egg-info\n'}
+[75.483473] (batrobot_alexa) StdoutLine: {'line': b'writing batrobot_alexa.egg-info/PKG-INFO\n'}
+[75.483942] (batrobot_alexa) StdoutLine: {'line': b'writing dependency_links to batrobot_alexa.egg-info/dependency_links.txt\n'}
+[75.484303] (batrobot_alexa) StdoutLine: {'line': b'writing top-level names to batrobot_alexa.egg-info/top_level.txt\n'}
+[75.487397] (batrobot_alexa) StdoutLine: {'line': b"writing manifest file 'batrobot_alexa.egg-info/SOURCES.txt'\n"}
+[75.503040] (batrobot_alexa) StdoutLine: {'line': b"reading manifest file 'batrobot_alexa.egg-info/SOURCES.txt'\n"}
+[75.506380] (batrobot_alexa) StdoutLine: {'line': b"writing manifest file 'batrobot_alexa.egg-info/SOURCES.txt'\n"}
+[75.535921] (-) TimerEvent: {}
+[75.639644] (-) TimerEvent: {}
+[75.671994] (batrobot_alexa) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_batrobot_alexa_egg\n'}
+[75.740665] (batrobot_alexa) CommandEnded: {'returncode': 0}
+[75.746807] (-) TimerEvent: {}
+[75.747166] (batrobot_alexa) JobProgress: {'identifier': 'batrobot_alexa', 'progress': 'install'}
+[75.753812] (batrobot_alexa) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/naveen/bat_robot/build/batrobot_alexa'], 'cwd': '/home/naveen/bat_robot/build/batrobot_alexa', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'naveen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins/lib:/home/naveen/roarm_ws_em0/install/roarm_moveit/lib:/home/naveen/roarm_ws_em0/install/moveit_servo/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/naveen'), ('OLDPWD', '/home/naveen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1429'), ('SYSTEMD_EXEC_PID', '1596'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8298'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/naveen/roarm_ws_em0/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'naveen'), ('JOURNAL_STREAM', '8:12090'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'naveen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/naveen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/naveen-NS14A6:@/tmp/.ICE-unix/1558,unix/naveen-NS14A6:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', '011b8610f1bd4ffc8302fe18f8791d9a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4J4972'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/launch_api:/home/naveen/roarm_ws_em0/install/alexa_integration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42f654da-b43d-4083-a10c-d0e712e0af11'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/naveen/bat_robot/build/batrobot_alexa'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/ros2web_widgets/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_example_py/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/roarm_web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_app/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/ros2web_interfaces/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_moveit/local/lib/python3.10/dist-packages:/home/naveen/roarm_ws_em0/install/roarm_driver/lib/python3.10/site-packages:/home/naveen/roarm_ws_em0/install/launch_api/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble')]), 'shell': False}
+[75.837741] (batrobot_alexa) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[75.840894] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/task_server_node\n'}
+[75.845775] (batrobot_alexa) StdoutLine: {'line': b'-- Set runtime path of "/home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/task_server_node" to ""\n'}
+[75.848505] (-) TimerEvent: {}
+[75.848836] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.sh\n'}
+[75.851911] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.dsv\n'}
+[75.854405] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info\n'}
+[75.855143] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[75.855497] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[75.855759] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[75.855971] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[75.860916] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa\n'}
+[75.867398] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/__init__.py\n'}
+[75.867812] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/alexa_interface.py\n'}
+[75.952373] (-) TimerEvent: {}
+[76.053350] (-) TimerEvent: {}
+[76.145531] (batrobot_alexa) StdoutLine: {'line': b"Listing '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa'...\n"}
+[76.146521] (batrobot_alexa) StdoutLine: {'line': b"Compiling '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/__init__.py'...\n"}
+[76.146977] (batrobot_alexa) StdoutLine: {'line': b"Compiling '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/alexa_interface.py'...\n"}
+[76.155512] (-) TimerEvent: {}
+[76.186478] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch\n'}
+[76.188578] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch/alexa_interface.launch.py\n'}
+[76.191447] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/lib/libtask_server.so\n'}
+[76.204672] (batrobot_alexa) StdoutLine: {'line': b'-- Set runtime path of "/home/naveen/bat_robot/install/batrobot_alexa/lib/libtask_server.so" to ""\n'}
+[76.205542] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/alexa_interface.py\n'}
+[76.205882] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/package_run_dependencies/batrobot_alexa\n'}
+[76.217138] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/parent_prefix_path/batrobot_alexa\n'}
+[76.217684] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.sh\n'}
+[76.218033] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.dsv\n'}
+[76.226411] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.sh\n'}
+[76.226930] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.dsv\n'}
+[76.232622] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.bash\n'}
+[76.233180] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.sh\n'}
+[76.238513] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.zsh\n'}
+[76.242311] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.dsv\n'}
+[76.243620] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv\n'}
+[76.244506] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/packages/batrobot_alexa\n'}
+[76.244876] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/rclcpp_components/batrobot_alexa\n'}
+[76.249170] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig.cmake\n'}
+[76.251387] (batrobot_alexa) StdoutLine: {'line': b'-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig-version.cmake\n'}
+[76.251743] (batrobot_alexa) StdoutLine: {'line': b'-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.xml\n'}
+[76.257844] (-) TimerEvent: {}
+[76.265393] (batrobot_alexa) CommandEnded: {'returncode': 0}
+[76.358355] (-) TimerEvent: {}
+[76.386994] (batrobot_alexa) JobEnded: {'identifier': 'batrobot_alexa', 'rc': 0}
+[76.391798] (-) EventReactorShutdown: {}

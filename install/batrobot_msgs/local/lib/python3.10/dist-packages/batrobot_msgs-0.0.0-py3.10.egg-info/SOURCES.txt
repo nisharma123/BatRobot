@@ -1,0 +1,8 @@
+setup.py
+batrobot_msgs/__init__.py
+batrobot_msgs.egg-info/PKG-INFO
+batrobot_msgs.egg-info/SOURCES.txt
+batrobot_msgs.egg-info/dependency_links.txt
+batrobot_msgs.egg-info/top_level.txt
+batrobot_msgs/action/__init__.py
+batrobot_msgs/action/_batrobot_task.py

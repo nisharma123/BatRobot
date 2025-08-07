@@ -1,0 +1,601 @@
+[0.738s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.738s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c20069675e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c2006966e60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c2006966e60>>, mixin_verb=('build',))
+[2.055s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.056s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/naveen/bat_robot'
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.128s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.129s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.129s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.137s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extensions ['ignore', 'ignore_ament_install']
+[2.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extension 'ignore'
+[2.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extension 'ignore_ament_install'
+[2.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extensions ['colcon_pkg']
+[2.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extension 'colcon_pkg'
+[2.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extensions ['colcon_meta']
+[2.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extension 'colcon_meta'
+[2.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extensions ['ros']
+[2.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_alexa) by extension 'ros'
+[2.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_alexa' with type 'ros.ament_cmake' and name 'batrobot_alexa'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extension 'ignore'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extension 'ignore_ament_install'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extensions ['colcon_pkg']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extension 'colcon_pkg'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extensions ['colcon_meta']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extension 'colcon_meta'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extensions ['ros']
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_bringup) by extension 'ros'
+[2.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_bringup' with type 'ros.ament_cmake' and name 'batrobot_bringup'
+[2.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extensions ['ignore', 'ignore_ament_install']
+[2.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extension 'ignore'
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extension 'ignore_ament_install'
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extensions ['colcon_pkg']
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extension 'colcon_pkg'
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extensions ['colcon_meta']
+[2.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extension 'colcon_meta'
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extensions ['ros']
+[2.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_controller) by extension 'ros'
+[2.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_controller' with type 'ros.ament_cmake' and name 'batrobot_controller'
+[2.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extensions ['ignore', 'ignore_ament_install']
+[2.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extension 'ignore'
+[2.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extension 'ignore_ament_install'
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extensions ['colcon_pkg']
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extension 'colcon_pkg'
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extensions ['colcon_meta']
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extension 'colcon_meta'
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extensions ['ros']
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_description) by extension 'ros'
+[2.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_description' with type 'ros.ament_cmake' and name 'batrobot_description'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extensions ['ignore', 'ignore_ament_install']
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extension 'ignore'
+[2.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extension 'ignore_ament_install'
+[2.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extensions ['colcon_pkg']
+[2.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extension 'colcon_pkg'
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extensions ['colcon_meta']
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extension 'colcon_meta'
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extensions ['ros']
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_firmware) by extension 'ros'
+[2.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_firmware' with type 'ros.ament_cmake' and name 'batrobot_firmware'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extensions ['ignore', 'ignore_ament_install']
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extension 'ignore'
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extension 'ignore_ament_install'
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extensions ['colcon_pkg']
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extension 'colcon_pkg'
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extensions ['colcon_meta']
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extension 'colcon_meta'
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extensions ['ros']
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_moveit) by extension 'ros'
+[2.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_moveit' with type 'ros.ament_cmake' and name 'batrobot_moveit'
+[2.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extension 'ignore'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extension 'ignore_ament_install'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extensions ['colcon_pkg']
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extension 'colcon_pkg'
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extensions ['colcon_meta']
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extension 'colcon_meta'
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extensions ['ros']
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_msgs) by extension 'ros'
+[2.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_msgs' with type 'ros.ament_cmake' and name 'batrobot_msgs'
+[2.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extensions ['ignore', 'ignore_ament_install']
+[2.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extension 'ignore'
+[2.285s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extension 'ignore_ament_install'
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extensions ['colcon_pkg']
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extension 'colcon_pkg'
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extensions ['colcon_meta']
+[2.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extension 'colcon_meta'
+[2.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extensions ['ros']
+[2.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/batrobot_py_examples) by extension 'ros'
+[2.290s] DEBUG:colcon.colcon_core.package_identification:Package 'src/batrobot_py_examples' with type 'ros.ament_python' and name 'batrobot_py_examples'
+[2.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.438s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/naveen/roarm_ws_em0/install
+[2.453s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 394 installed packages in /opt/ros/humble
+[2.470s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.833s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_args' from command line to 'None'
+[2.834s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_target' from command line to 'None'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.835s] Level 5:colcon.colcon_core.verb:set package 'batrobot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.835s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_description', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_description', 'symlink_install': False, 'test_result_base': None}
+[2.837s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_args' from command line to 'None'
+[2.837s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_target' from command line to 'None'
+[2.838s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_clean_cache' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_clean_first' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'cmake_force_configure' from command line to 'False'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'ament_cmake_args' from command line to 'None'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'catkin_cmake_args' from command line to 'None'
+[2.839s] Level 5:colcon.colcon_core.verb:set package 'batrobot_firmware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.839s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_firmware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_firmware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_firmware', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_firmware', 'symlink_install': False, 'test_result_base': None}
+[2.842s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_args' from command line to 'None'
+[2.843s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_target' from command line to 'None'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.844s] Level 5:colcon.colcon_core.verb:set package 'batrobot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.844s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_msgs', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.846s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_args' from command line to 'None'
+[2.846s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_target' from command line to 'None'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_clean_first' from command line to 'False'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'cmake_force_configure' from command line to 'False'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'ament_cmake_args' from command line to 'None'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[2.847s] Level 5:colcon.colcon_core.verb:set package 'batrobot_py_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.850s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_py_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_py_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_py_examples', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_py_examples', 'symlink_install': False, 'test_result_base': None}
+[2.851s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_args' from command line to 'None'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_target' from command line to 'None'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.852s] Level 5:colcon.colcon_core.verb:set package 'batrobot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.853s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_controller', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_controller', 'symlink_install': False, 'test_result_base': None}
+[2.855s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_args' from command line to 'None'
+[2.855s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_target' from command line to 'None'
+[2.855s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.856s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[2.856s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[2.856s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[2.857s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[2.857s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[2.857s] Level 5:colcon.colcon_core.verb:set package 'batrobot_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.857s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_moveit', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_moveit', 'symlink_install': False, 'test_result_base': None}
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_args' from command line to 'None'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_target' from command line to 'None'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_clean_cache' from command line to 'False'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_clean_first' from command line to 'False'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'cmake_force_configure' from command line to 'False'
+[2.862s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'ament_cmake_args' from command line to 'None'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'catkin_cmake_args' from command line to 'None'
+[2.863s] Level 5:colcon.colcon_core.verb:set package 'batrobot_alexa' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.863s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_alexa' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_alexa', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_alexa', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_alexa', 'symlink_install': False, 'test_result_base': None}
+[2.864s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_args' from command line to 'None'
+[2.865s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_target' from command line to 'None'
+[2.865s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.865s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.865s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.865s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.866s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.866s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.866s] Level 5:colcon.colcon_core.verb:set package 'batrobot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.867s] DEBUG:colcon.colcon_core.verb:Building package 'batrobot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/naveen/bat_robot/build/batrobot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/naveen/bat_robot/install/batrobot_bringup', 'merge_install': False, 'path': '/home/naveen/bat_robot/src/batrobot_bringup', 'symlink_install': False, 'test_result_base': None}
+[2.869s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.874s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.876s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_description' with build type 'ament_cmake'
+[2.879s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_description'
+[2.894s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.895s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.896s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.924s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_msgs' with build type 'ament_cmake'
+[2.925s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_msgs'
+[2.930s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[3.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[3.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[3.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description
+[3.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_description)
+[3.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description
+[3.694s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description' for CMake module files
+[3.702s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description' for CMake config files
+[3.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_description', 'cmake_prefix_path')
+[3.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.ps1'
+[3.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.dsv'
+[3.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.sh'
+[3.736s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/bin'
+[3.737s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/lib/pkgconfig/batrobot_description.pc'
+[3.743s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/lib/python3.10/site-packages'
+[3.744s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/bin'
+[3.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.ps1'
+[3.756s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.dsv'
+[3.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.sh'
+[3.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.bash'
+[3.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.zsh'
+[3.799s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_description/share/colcon-core/packages/batrobot_description)
+[3.803s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_description)
+[3.810s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description' for CMake module files
+[3.820s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description' for CMake config files
+[3.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_description', 'cmake_prefix_path')
+[3.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.ps1'
+[3.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.dsv'
+[3.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/hook/cmake_prefix_path.sh'
+[3.847s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/bin'
+[3.847s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/lib/pkgconfig/batrobot_description.pc'
+[3.848s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/lib/python3.10/site-packages'
+[3.853s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_description/bin'
+[3.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.ps1'
+[3.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.dsv'
+[3.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.sh'
+[3.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.bash'
+[3.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.zsh'
+[3.892s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_description/share/colcon-core/packages/batrobot_description)
+[3.899s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_controller' with build type 'ament_cmake'
+[3.900s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_controller'
+[3.909s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.910s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_controller': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_controller -- -j2 -l2
+[4.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_controller' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_controller -- -j2 -l2
+[4.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_controller': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_controller
+[4.994s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_controller)
+[4.999s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller' for CMake module files
+[5.011s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller' for CMake config files
+[5.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_controller' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_controller
+[5.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'cmake_prefix_path')
+[5.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.ps1'
+[5.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.dsv'
+[5.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.sh'
+[5.034s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib'
+[5.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'ld_library_path_lib')
+[5.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.ps1'
+[5.043s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.dsv'
+[5.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.sh'
+[5.059s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/bin'
+[5.059s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib/pkgconfig/batrobot_controller.pc'
+[5.060s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages'
+[5.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'pythonpath')
+[5.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.ps1'
+[5.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.dsv'
+[5.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.sh'
+[5.092s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/bin'
+[5.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.ps1'
+[5.106s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.dsv'
+[5.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.sh'
+[5.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.bash'
+[5.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.zsh'
+[5.138s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_controller/share/colcon-core/packages/batrobot_controller)
+[5.144s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_controller)
+[5.147s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller' for CMake module files
+[5.158s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller' for CMake config files
+[5.167s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'cmake_prefix_path')
+[5.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.ps1'
+[5.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.dsv'
+[5.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/cmake_prefix_path.sh'
+[5.218s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib'
+[5.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'ld_library_path_lib')
+[5.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.ps1'
+[5.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.dsv'
+[5.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/ld_library_path_lib.sh'
+[5.250s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/bin'
+[5.250s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib/pkgconfig/batrobot_controller.pc'
+[5.258s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages'
+[5.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_controller', 'pythonpath')
+[5.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.ps1'
+[5.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.dsv'
+[5.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/hook/pythonpath.sh'
+[5.295s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_controller/bin'
+[5.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.ps1'
+[5.304s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.dsv'
+[5.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.sh'
+[5.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.bash'
+[5.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_controller/share/batrobot_controller/package.zsh'
+[5.330s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_controller/share/colcon-core/packages/batrobot_controller)
+[5.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_moveit' with build type 'ament_cmake'
+[5.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_moveit'
+[5.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_moveit': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveit -- -j2 -l2
+[5.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_moveit' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_moveit -- -j2 -l2
+[5.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_moveit': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_moveit
+[6.148s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_moveit)
+[6.149s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit' for CMake module files
+[6.158s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit' for CMake config files
+[6.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_moveit', 'cmake_prefix_path')
+[6.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.ps1'
+[6.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_moveit' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_moveit
+[6.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.dsv'
+[6.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.sh'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/bin'
+[6.203s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/lib/pkgconfig/batrobot_moveit.pc'
+[6.209s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/lib/python3.10/site-packages'
+[6.211s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/bin'
+[6.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.ps1'
+[6.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.dsv'
+[6.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.sh'
+[6.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.bash'
+[6.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.zsh'
+[6.246s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_moveit/share/colcon-core/packages/batrobot_moveit)
+[6.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_moveit)
+[6.262s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit' for CMake module files
+[6.270s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit' for CMake config files
+[6.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_moveit', 'cmake_prefix_path')
+[6.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.ps1'
+[6.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.dsv'
+[6.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/hook/cmake_prefix_path.sh'
+[6.292s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/bin'
+[6.293s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/lib/pkgconfig/batrobot_moveit.pc'
+[6.297s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/lib/python3.10/site-packages'
+[6.300s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_moveit/bin'
+[6.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.ps1'
+[6.313s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.dsv'
+[6.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.sh'
+[6.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.bash'
+[6.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/package.zsh'
+[6.341s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_moveit/share/colcon-core/packages/batrobot_moveit)
+[6.346s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_firmware' with build type 'ament_cmake'
+[6.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_firmware'
+[6.350s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_firmware -- -j2 -l2
+[11.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_msgs -- -j2 -l2
+[11.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs
+[11.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_firmware -- -j2 -l2
+[11.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_firmware
+[12.454s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_msgs)
+[12.455s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs' for CMake module files
+[12.478s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs' for CMake config files
+[12.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_msgs', 'cmake_prefix_path')
+[12.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.ps1'
+[12.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.dsv'
+[12.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.sh'
+[12.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_msgs
+[12.533s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib'
+[12.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_msgs', 'ld_library_path_lib')
+[12.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.ps1'
+[12.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.dsv'
+[12.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.sh'
+[12.556s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/bin'
+[12.557s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib/pkgconfig/batrobot_msgs.pc'
+[12.560s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib/python3.10/site-packages'
+[12.562s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/bin'
+[12.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.ps1'
+[12.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.dsv'
+[12.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.sh'
+[12.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.bash'
+[12.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.zsh'
+[12.586s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_msgs/share/colcon-core/packages/batrobot_msgs)
+[12.591s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_msgs)
+[12.593s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs' for CMake module files
+[12.598s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs' for CMake config files
+[12.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_msgs', 'cmake_prefix_path')
+[12.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.ps1'
+[12.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.dsv'
+[12.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/cmake_prefix_path.sh'
+[12.613s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib'
+[12.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_msgs', 'ld_library_path_lib')
+[12.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.ps1'
+[12.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.dsv'
+[12.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/hook/ld_library_path_lib.sh'
+[12.628s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/bin'
+[12.629s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib/pkgconfig/batrobot_msgs.pc'
+[12.630s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/lib/python3.10/site-packages'
+[12.631s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_msgs/bin'
+[12.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.ps1'
+[12.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.dsv'
+[12.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.sh'
+[12.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.bash'
+[12.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_msgs/share/batrobot_msgs/package.zsh'
+[12.650s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_msgs/share/colcon-core/packages/batrobot_msgs)
+[12.655s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_py_examples' with build type 'ament_python'
+[12.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_py_examples', 'ament_prefix_path')
+[12.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/ament_prefix_path.ps1'
+[12.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/ament_prefix_path.dsv'
+[12.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/ament_prefix_path.sh'
+[12.670s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.670s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_firmware)
+[12.708s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware' for CMake module files
+[12.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_firmware
+[12.717s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware' for CMake config files
+[12.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_firmware', 'cmake_prefix_path')
+[12.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.ps1'
+[12.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.dsv'
+[12.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.sh'
+[12.730s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib'
+[12.731s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/bin'
+[12.731s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib/pkgconfig/batrobot_firmware.pc'
+[12.733s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib/python3.10/site-packages'
+[12.736s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/bin'
+[12.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.ps1'
+[12.742s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.dsv'
+[12.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.sh'
+[12.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.bash'
+[12.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.zsh'
+[12.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_firmware/share/colcon-core/packages/batrobot_firmware)
+[12.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_firmware)
+[12.760s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware' for CMake module files
+[12.764s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware' for CMake config files
+[12.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_firmware', 'cmake_prefix_path')
+[12.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.ps1'
+[12.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.dsv'
+[12.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/hook/cmake_prefix_path.sh'
+[12.778s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib'
+[12.779s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/bin'
+[12.779s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib/pkgconfig/batrobot_firmware.pc'
+[12.780s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/lib/python3.10/site-packages'
+[12.781s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_firmware/bin'
+[12.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.ps1'
+[12.788s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.dsv'
+[12.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.sh'
+[12.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.bash'
+[12.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_firmware/share/batrobot_firmware/package.zsh'
+[12.800s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_firmware/share/colcon-core/packages/batrobot_firmware)
+[12.804s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_alexa' with build type 'ament_cmake'
+[12.806s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_alexa'
+[12.807s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.807s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.685s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/naveen/bat_robot/src/batrobot_py_examples'
+[14.689s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.690s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_alexa': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_alexa -- -j2 -l2
+[19.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/src/batrobot_py_examples': PYTHONPATH=/home/naveen/bat_robot/build/batrobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/batrobot_py_examples build --build-base /home/naveen/bat_robot/build/batrobot_py_examples/build install --record /home/naveen/bat_robot/build/batrobot_py_examples/install.log --single-version-externally-managed install_data
+[24.104s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples' for CMake module files
+[24.111s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples' for CMake config files
+[24.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/src/batrobot_py_examples' returned '0': PYTHONPATH=/home/naveen/bat_robot/build/batrobot_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/batrobot_py_examples build --build-base /home/naveen/bat_robot/build/batrobot_py_examples/build install --record /home/naveen/bat_robot/build/batrobot_py_examples/install.log --single-version-externally-managed install_data
+[24.124s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples/lib'
+[24.125s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples/bin'
+[24.127s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples/lib/pkgconfig/batrobot_py_examples.pc'
+[24.131s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples/lib/python3.10/site-packages'
+[24.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_py_examples', 'pythonpath')
+[24.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/pythonpath.ps1'
+[24.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/pythonpath.dsv'
+[24.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/hook/pythonpath.sh'
+[24.161s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_py_examples/bin'
+[24.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_py_examples)
+[24.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/package.ps1'
+[24.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/package.dsv'
+[24.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/package.sh'
+[24.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/package.bash'
+[24.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_py_examples/share/batrobot_py_examples/package.zsh'
+[24.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_py_examples/share/colcon-core/packages/batrobot_py_examples)
+[24.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/naveen/bat_robot/src/batrobot_bringup' with build type 'ament_cmake'
+[24.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/naveen/bat_robot/src/batrobot_bringup'
+[24.218s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.219s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_bringup': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_bringup -- -j2 -l2
+[24.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_bringup' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_bringup -- -j2 -l2
+[24.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_bringup': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_bringup
+[24.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_bringup)
+[24.865s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup' for CMake module files
+[24.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_bringup' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_bringup
+[24.878s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup' for CMake config files
+[24.886s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_bringup', 'cmake_prefix_path')
+[24.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.ps1'
+[24.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.dsv'
+[24.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.sh'
+[24.910s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/bin'
+[24.910s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/lib/pkgconfig/batrobot_bringup.pc'
+[24.911s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/lib/python3.10/site-packages'
+[24.917s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/bin'
+[24.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.ps1'
+[24.929s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.dsv'
+[24.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.sh'
+[24.941s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.bash'
+[24.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.zsh'
+[24.956s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_bringup/share/colcon-core/packages/batrobot_bringup)
+[24.963s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_bringup)
+[24.968s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup' for CMake module files
+[24.973s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup' for CMake config files
+[24.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_bringup', 'cmake_prefix_path')
+[24.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.ps1'
+[24.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.dsv'
+[24.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/hook/cmake_prefix_path.sh'
+[24.995s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/bin'
+[24.998s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/lib/pkgconfig/batrobot_bringup.pc'
+[24.999s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/lib/python3.10/site-packages'
+[25.003s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_bringup/bin'
+[25.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.ps1'
+[25.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.dsv'
+[25.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.sh'
+[25.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.bash'
+[25.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_bringup/share/batrobot_bringup/package.zsh'
+[25.045s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_bringup/share/colcon-core/packages/batrobot_bringup)
+[78.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_alexa' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_alexa -- -j2 -l2
+[78.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/naveen/bat_robot/build/batrobot_alexa': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_alexa
+[79.137s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_alexa)
+[79.138s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa' for CMake module files
+[79.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/naveen/bat_robot/build/batrobot_alexa' returned '0': AMENT_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/naveen/bat_robot/install/batrobot_moveit:/home/naveen/bat_robot/install/batrobot_controller:/home/naveen/bat_robot/install/batrobot_msgs:/home/naveen/bat_robot/install/batrobot_description:/home/naveen/roarm_ws_em0/install/ros2web_interfaces:/home/naveen/roarm_ws_em0/install/roarm_msgs:/home/naveen/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/naveen/roarm_ws_em0/install/roarm_moveit_cmd:/home/naveen/roarm_ws_em0/install/roarm_moveit:/home/naveen/roarm_ws_em0/install/roarm_description:/home/naveen/roarm_ws_em0/install/moveit_servo:/home/naveen/roarm_ws_em0/install/alexa_integration:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble LD_LIBRARY_PATH=/home/naveen/bat_robot/install/batrobot_controller/lib:/home/naveen/bat_robot/install/batrobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/naveen/bat_robot/install/batrobot_controller/lib/python3.10/site-packages:/home/naveen/bat_robot/install/batrobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_alexa
+[79.146s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa' for CMake config files
+[79.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_alexa', 'cmake_prefix_path')
+[79.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.ps1'
+[79.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.dsv'
+[79.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.sh'
+[79.163s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib'
+[79.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_alexa', 'ld_library_path_lib')
+[79.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.ps1'
+[79.169s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.dsv'
+[79.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.sh'
+[79.178s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/bin'
+[79.178s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib/pkgconfig/batrobot_alexa.pc'
+[79.179s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib/python3.10/site-packages'
+[79.182s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/bin'
+[79.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.ps1'
+[79.190s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv'
+[79.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.sh'
+[79.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.bash'
+[79.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.zsh'
+[79.205s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_alexa/share/colcon-core/packages/batrobot_alexa)
+[79.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(batrobot_alexa)
+[79.212s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa' for CMake module files
+[79.217s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa' for CMake config files
+[79.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_alexa', 'cmake_prefix_path')
+[79.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.ps1'
+[79.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.dsv'
+[79.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/cmake_prefix_path.sh'
+[79.231s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib'
+[79.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('batrobot_alexa', 'ld_library_path_lib')
+[79.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.ps1'
+[79.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.dsv'
+[79.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/hook/ld_library_path_lib.sh'
+[79.240s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/bin'
+[79.240s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib/pkgconfig/batrobot_alexa.pc'
+[79.242s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/lib/python3.10/site-packages'
+[79.243s] Level 1:colcon.colcon_core.environment:checking '/home/naveen/bat_robot/install/batrobot_alexa/bin'
+[79.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.ps1'
+[79.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv'
+[79.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.sh'
+[79.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.bash'
+[79.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.zsh'
+[79.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/naveen/bat_robot/install/batrobot_alexa/share/colcon-core/packages/batrobot_alexa)
+[79.264s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[79.264s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[79.264s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[79.264s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[79.306s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[79.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[79.307s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[79.436s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[79.437s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/naveen/bat_robot/install/local_setup.ps1'
+[79.449s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/naveen/bat_robot/install/_local_setup_util_ps1.py'
+[79.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/naveen/bat_robot/install/setup.ps1'
+[79.475s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/naveen/bat_robot/install/local_setup.sh'
+[79.478s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/naveen/bat_robot/install/_local_setup_util_sh.py'
+[79.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/naveen/bat_robot/install/setup.sh'
+[79.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/naveen/bat_robot/install/local_setup.bash'
+[79.503s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/naveen/bat_robot/install/setup.bash'
+[79.518s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/naveen/bat_robot/install/local_setup.zsh'
+[79.522s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/naveen/bat_robot/install/setup.zsh'

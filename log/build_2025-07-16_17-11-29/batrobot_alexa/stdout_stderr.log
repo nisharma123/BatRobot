@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target task_server[0m
+[ 50%] Built target task_server
+[100%] Built target task_server_node
+[100%] Built target ament_cmake_python_copy_batrobot_alexa
+running egg_info
+writing batrobot_alexa.egg-info/PKG-INFO
+writing dependency_links to batrobot_alexa.egg-info/dependency_links.txt
+writing top-level names to batrobot_alexa.egg-info/top_level.txt
+reading manifest file 'batrobot_alexa.egg-info/SOURCES.txt'
+writing manifest file 'batrobot_alexa.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_batrobot_alexa_egg
+-- Install configuration: ""
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/task_server_node
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/pythonpath.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa-0.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/__init__.py
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/alexa_interface.py
+Listing '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa'...
+Compiling '/home/naveen/bat_robot/install/batrobot_alexa/local/lib/python3.10/dist-packages/batrobot_alexa/alexa_interface.py'...
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/launch/alexa_interface.launch.py
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/lib/libtask_server.so
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/lib/batrobot_alexa/alexa_interface.py
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/package_run_dependencies/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/parent_prefix_path/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.bash
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.sh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.zsh
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.dsv
+-- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/packages/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/rclcpp_components/batrobot_alexa
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig.cmake
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig-version.cmake
+-- Up-to-date: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.xml

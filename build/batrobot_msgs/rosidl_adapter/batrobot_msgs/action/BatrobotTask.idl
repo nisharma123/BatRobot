@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from batrobot_msgs/action/BatrobotTask.action
+// generated code does not contain a copyright notice
+
+
+module batrobot_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal         ")
+    struct BatrobotTask_Goal {
+      int32 task_number;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct BatrobotTask_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct BatrobotTask_Feedback {
+      int32 percentage;
+    };
+  };
+};

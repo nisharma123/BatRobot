@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target task_server[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:143:10:[m[K [01;31m[Kfatal error: [m[Kbatrobot_msgs/action/BatrobotTask.hpp: No such file or directory
+  143 | #include [01;31m[K"batrobot_msgs/action/BatrobotTask.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

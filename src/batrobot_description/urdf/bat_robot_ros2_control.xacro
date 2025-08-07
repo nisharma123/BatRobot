@@ -16,7 +16,7 @@
             <joint name="joint_6">
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>    -->
+            <state_interface name="effort"/> -->
         </joint>
         </xacro:if>
 
@@ -43,7 +43,7 @@
             </command_interface>
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>  -->
+            <state_interface name="effort"/> -->
         </joint>
 
         <joint name="joint_2">
@@ -53,7 +53,7 @@
             </command_interface>
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>  -->
+            <state_interface name="effort"/> --> 
         </joint>
 
         <joint name="joint_3">
@@ -63,7 +63,7 @@
             </command_interface>
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>  -->
+            <state_interface name="effort"/> --> 
         </joint>
 
         <joint name="joint_4">
@@ -73,7 +73,7 @@
             </command_interface>
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>  -->
+            <state_interface name="effort"/> --> 
         </joint>
 
         <joint name="joint_5">
@@ -83,7 +83,7 @@
             </command_interface>
             <state_interface name="position"/>
             <!-- <state_interface name="velocity"/> 
-            <state_interface name="effort"/>    -->
+            <state_interface name="effort"/> --> 
         </joint>
 
     </ros2_control>

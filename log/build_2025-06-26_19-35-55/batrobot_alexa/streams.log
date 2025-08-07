@@ -1,0 +1,42 @@
+[0.070s] Invoking command in '/home/naveen/bat_robot/build/batrobot_alexa': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_alexa -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_alexa
+[0.665s] -- The C compiler identification is GNU 11.4.0
+[1.194s] -- The CXX compiler identification is GNU 11.4.0
+[1.270s] -- Detecting C compiler ABI info
+[1.702s] -- Detecting C compiler ABI info - done
+[1.793s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.796s] -- Detecting C compile features
+[1.805s] -- Detecting C compile features - done
+[1.828s] -- Detecting CXX compiler ABI info
+[2.396s] -- Detecting CXX compiler ABI info - done
+[2.449s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.450s] -- Detecting CXX compile features
+[2.453s] -- Detecting CXX compile features - done
+[2.486s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.894s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.007s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.927s] -- Added test 'lint_cmake' to check CMake code style
+[5.948s] -- Added test 'xmllint' to check XML markup files
+[5.960s] -- Configuring done
+[5.973s] -- Generating done
+[5.988s] -- Build files have been written to: /home/naveen/bat_robot/build/batrobot_alexa
+[6.077s] Invoked command in '/home/naveen/bat_robot/build/batrobot_alexa' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake /home/naveen/bat_robot/src/batrobot_alexa -DCMAKE_INSTALL_PREFIX=/home/naveen/bat_robot/install/batrobot_alexa
+[6.085s] Invoking command in '/home/naveen/bat_robot/build/batrobot_alexa': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_alexa -- -j2 -l2
+[7.602s] Invoked command in '/home/naveen/bat_robot/build/batrobot_alexa' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_alexa -- -j2 -l2
+[7.617s] Invoking command in '/home/naveen/bat_robot/build/batrobot_alexa': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_alexa
+[7.673s] -- Install configuration: ""
+[7.675s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/package_run_dependencies/batrobot_alexa
+[7.675s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/parent_prefix_path/batrobot_alexa
+[7.679s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.sh
+[7.680s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/ament_prefix_path.dsv
+[7.684s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.sh
+[7.686s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/environment/path.dsv
+[7.686s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.bash
+[7.690s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.sh
+[7.694s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.zsh
+[7.695s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/local_setup.dsv
+[7.695s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.dsv
+[7.700s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/ament_index/resource_index/packages/batrobot_alexa
+[7.700s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig.cmake
+[7.704s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/cmake/batrobot_alexaConfig-version.cmake
+[7.704s] -- Installing: /home/naveen/bat_robot/install/batrobot_alexa/share/batrobot_alexa/package.xml
+[7.724s] Invoked command in '/home/naveen/bat_robot/build/batrobot_alexa' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_alexa

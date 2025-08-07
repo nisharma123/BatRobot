@@ -1,0 +1,1 @@
+rclcpp;rclcpp_action;rclcpp_components;batrobot_msgs;moveit_ros_planning_interface;rclpy;ros2launch;python3-flask;batrobot_moveit;ament_lint_auto;ament_lint_common

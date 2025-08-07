@@ -1,0 +1,38 @@
+[0.245s] Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[0.970s] Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --build /home/naveen/bat_robot/build/batrobot_description -- -j2 -l2
+[1.140s] Invoking command in '/home/naveen/bat_robot/build/batrobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description
+[1.383s] -- Install configuration: ""
+[1.383s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes
+[1.402s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_right.stl
+[1.402s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/pi_camera.STL
+[1.417s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint3.stl
+[1.427s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base_plate.stl
+[1.428s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/base.stl
+[1.428s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint2.stl
+[1.445s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/joint1.stl
+[1.446s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/meshes/gripper_left.stl
+[1.446s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf
+[1.446s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot_ros2_control.xacro
+[1.447s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot.urdf.xacro
+[1.478s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/urdf/bat_robot_gazebo.xacro
+[1.479s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch
+[1.479s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/display.launch.py
+[1.489s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/launch/gazebo.launch.py
+[1.499s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/rviz
+[1.499s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/rviz/display.rviz
+[1.500s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/package_run_dependencies/batrobot_description
+[1.500s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/parent_prefix_path/batrobot_description
+[1.500s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/ament_prefix_path.sh
+[1.500s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/ament_prefix_path.dsv
+[1.501s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/path.sh
+[1.515s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/environment/path.dsv
+[1.515s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.bash
+[1.516s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.sh
+[1.516s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.zsh
+[1.516s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/local_setup.dsv
+[1.524s] -- Installing: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.dsv
+[1.524s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/ament_index/resource_index/packages/batrobot_description
+[1.525s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/cmake/batrobot_descriptionConfig.cmake
+[1.532s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/cmake/batrobot_descriptionConfig-version.cmake
+[1.538s] -- Up-to-date: /home/naveen/bat_robot/install/batrobot_description/share/batrobot_description/package.xml
+[1.551s] Invoked command in '/home/naveen/bat_robot/build/batrobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/naveen/roarm_ws_em0/install/ros2web_widgets:/home/naveen/roarm_ws_em0/install/ros2web_example_py:/home/naveen/roarm_ws_em0/install/roarm_web_app:/home/naveen/roarm_ws_em0/install/ros2web_app:/home/naveen/roarm_ws_em0/install/ros2web:/home/naveen/roarm_ws_em0/install/roarm_driver:/home/naveen/roarm_ws_em0/install/launch_api:/opt/ros/humble /usr/bin/cmake --install /home/naveen/bat_robot/build/batrobot_description

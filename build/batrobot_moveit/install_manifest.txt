@@ -30,6 +30,7 @@
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/moveit_controllers.yaml
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/batrobot.ros2_control.xacro
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/ros2_controllers.yaml
+/home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/planning_python_api.yaml
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/batrobot.urdf.xacro
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/config/pilz_cartesian_limits.yaml
 /home/naveen/bat_robot/install/batrobot_moveit/share/batrobot_moveit/.setup_assistant

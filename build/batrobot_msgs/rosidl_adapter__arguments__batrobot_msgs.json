@@ -1,0 +1,6 @@
+{
+  "package_name": "batrobot_msgs",
+  "non_idl_tuples": [
+    "/home/naveen/bat_robot/src/batrobot_msgs:action/BatrobotTask.action"
+  ]
+}

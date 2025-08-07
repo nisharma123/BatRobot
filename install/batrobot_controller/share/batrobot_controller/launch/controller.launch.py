@@ -9,114 +9,29 @@ from launch.substitutions import Command
 from ament_index_python.packages import get_package_share_directory
 
 
-# def generate_launch_description():
-
-#     is_sim_arg = DeclareLaunchArgument(
-#         "is_sim",
-#         default_value="True"
-#     )
-
-#     is_sim = LaunchConfiguration("is_sim")
-
-#     robot_description = ParameterValue(
-#         Command(
-#             [
-#                 "xacro ",
-#                 os.path.join(
-#                     get_package_share_directory("batrobot_description"), "urdf",
-#                     "bat_robot.urdf.xacro",
-#                 ),
-#                 "is_sim:=False"
-#             ]
-#         ),
-#         value_type=str,
-#     )
-
-#     robot_state_publisher_node = Node(
-#         package="robot_state_publisher",
-#         executable="robot_state_publisher",
-#         condition=UnlessCondition(is_sim),
-#         parameters=[{"robot_description": robot_description}],
-#     )
-
-#     controller_manager = Node(
-#         package="controller_manager",
-#         executable="ros2_control_node",
-#         parameters=[
-#             {"robot_description": robot_description,
-#              "use_sim_time": is_sim},
-#             os.path.join(
-#                 get_package_share_directory("batrobot_controller"),
-#                 "config",
-#                 "batrobot_controllers.yaml",
-#             ),
-#         ],
-#         condition=UnlessCondition(is_sim),
-#     )
-
-#     joint_state_broadcaster_spawner = Node(
-#         package="controller_manager",
-#         executable="spawner",
-#         arguments=[
-#             "joint_state_broadcaster",
-#             "--controller-manager",
-#             "/controller_manager",
-#         ],
-#     )
-
-#     arm_controller_spawner = Node(
-#         package="controller_manager",
-#         executable="spawner",
-#         arguments=["arm_controller", "--controller-manager", "/controller_manager"],
-#     )
-
-#     gripper_controller_spawner = Node(
-#         package="controller_manager",
-#         executable="spawner",
-#         arguments=["gripper_controller", "--controller-manager", "/controller_manager"],
-#     )
-
-#     return LaunchDescription(
-#         [
-#             is_sim_arg,
-#             robot_state_publisher_node,
-#             controller_manager,
-#             joint_state_broadcaster_spawner,
-#             arm_controller_spawner,
-#             gripper_controller_spawner,
-#         ]
-#     )
-
-
-from launch.substitutions import PythonExpression
-
 def generate_launch_description():
+
     is_sim_arg = DeclareLaunchArgument(
         "is_sim",
-        default_value="True",
-        description="Flag to enable simulation mode"
+        default_value="True"
     )
+
     is_sim = LaunchConfiguration("is_sim")
 
-    # Pass is_sim to xacro dynamically
     robot_description = ParameterValue(
         Command(
             [
                 "xacro ",
                 os.path.join(
-                    get_package_share_directory("batrobot_description"),
-                    "urdf",
+                    get_package_share_directory("batrobot_description"), "urdf",
                     "bat_robot.urdf.xacro",
                 ),
-                " is_sim:=",
-                is_sim,
+                " is_sim:=",  # <--- ADDED THE SPACE HERE
+                LaunchConfiguration("is_sim") # <--- USE THE LaunchConfiguration FOR is_sim
             ]
         ),
         value_type=str,
     )
-
-    # Convert string to boolean for use_sim_time
-    use_sim_time_bool = PythonExpression([is_sim, " == 'True'"])
 
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
@@ -130,7 +45,7 @@ def generate_launch_description():
         executable="ros2_control_node",
         parameters=[
             {"robot_description": robot_description,
-             "use_sim_time": use_sim_time_bool},
+             "use_sim_time": is_sim},
             os.path.join(
                 get_package_share_directory("batrobot_controller"),
                 "config",
@@ -140,7 +55,6 @@ def generate_launch_description():
         condition=UnlessCondition(is_sim),
     )
 
-    # Spawners normally needed only when running real robot
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -149,21 +63,18 @@ def generate_launch_description():
             "--controller-manager",
             "/controller_manager",
         ],
-        condition=UnlessCondition(is_sim),
     )
 
     arm_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["arm_controller", "--controller-manager", "/controller_manager"],
-        condition=UnlessCondition(is_sim),
     )
 
     gripper_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["gripper_controller", "--controller-manager", "/controller_manager"],
-        condition=UnlessCondition(is_sim),
     )
 
     return LaunchDescription(
@@ -176,3 +87,93 @@ def generate_launch_description():
             gripper_controller_spawner,
         ]
     )
+
+
+# from launch.substitutions import PythonExpression
+
+# def generate_launch_description():
+#     is_sim_arg = DeclareLaunchArgument(
+#         "is_sim",
+#         default_value="True",
+#         description="Flag to enable simulation mode"
+#     )
+#     is_sim = LaunchConfiguration("is_sim")
+
+#     # Pass is_sim to xacro dynamically
+#     robot_description = ParameterValue(
+#         Command(
+#             [
+#                 "xacro ",
+#                 os.path.join(
+#                     get_package_share_directory("batrobot_description"),
+#                     "urdf",
+#                     "bat_robot.urdf.xacro",
+#                 ),
+#                 " is_sim:=",
+#                 is_sim,
+#             ]
+#         ),
+#         value_type=str,
+#     )
+
+#     # Convert string to boolean for use_sim_time
+#     use_sim_time_bool = PythonExpression([is_sim, " == 'True'"])
+
+#     robot_state_publisher_node = Node(
+#         package="robot_state_publisher",
+#         executable="robot_state_publisher",
+#         condition=UnlessCondition(is_sim),
+#         parameters=[{"robot_description": robot_description}],
+#     )
+
+#     controller_manager = Node(
+#         package="controller_manager",
+#         executable="ros2_control_node",
+#         parameters=[
+#             {"robot_description": robot_description,
+#              "use_sim_time": use_sim_time_bool},
+#             os.path.join(
+#                 get_package_share_directory("batrobot_controller"),
+#                 "config",
+#                 "batrobot_controllers.yaml",
+#             ),
+#         ],
+#         condition=UnlessCondition(is_sim),
+#     )
+
+#     # Spawners normally needed only when running real robot
+#     joint_state_broadcaster_spawner = Node(
+#         package="controller_manager",
+#         executable="spawner",
+#         arguments=[
+#             "joint_state_broadcaster",
+#             "--controller-manager",
+#             "/controller_manager",
+#         ],
+#         condition=UnlessCondition(is_sim),
+#     )
+
+#     arm_controller_spawner = Node(
+#         package="controller_manager",
+#         executable="spawner",
+#         arguments=["arm_controller", "--controller-manager", "/controller_manager"],
+#         condition=UnlessCondition(is_sim),
+#     )
+
+#     gripper_controller_spawner = Node(
+#         package="controller_manager",
+#         executable="spawner",
+#         arguments=["gripper_controller", "--controller-manager", "/controller_manager"],
+#         condition=UnlessCondition(is_sim),
+#     )
+
+#     return LaunchDescription(
+#         [
+#             is_sim_arg,
+#             robot_state_publisher_node,
+#             controller_manager,
+#             joint_state_broadcaster_spawner,
+#             arm_controller_spawner,
+#             gripper_controller_spawner,
+#         ]
+#     )

@@ -1,0 +1,19 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/task_server.dir/src/task_server.cpp.o[0m
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:[m[K In member function ‘[01m[Kvoid batrobot_remote::TaskServer::execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<batrobot_msgs::action::BatrobotTask> >)[m[K’:
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:266:55:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveResult[m[K’ is not a member of ‘[01m[Kmoveit::planning_interface::MoveGroupInterface[m[K’
+  266 |       moveit::planning_interface::MoveGroupInterface::[01;31m[KMoveResult[m[K arm_move_result = arm_move_group_->execute(arm_plan);
+      |                                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:267:55:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveResult[m[K’ is not a member of ‘[01m[Kmoveit::planning_interface::MoveGroupInterface[m[K’
+  267 |       moveit::planning_interface::MoveGroupInterface::[01;31m[KMoveResult[m[K gripper_move_result = gripper_move_group_->execute(gripper_plan);
+      |                                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:269:11:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_move_result[m[K’ was not declared in this scope; did you mean ‘[01m[Karm_move_group_[m[K’?
+  269 |       if ([01;31m[Karm_move_result[m[K == moveit::core::MoveItErrorCode::SUCCESS &&
+      |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |           [32m[Karm_move_group_[m[K
+[01m[K/home/naveen/bat_robot/src/batrobot_alexa/src/task_server.cpp:270:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_move_result[m[K’ was not declared in this scope; did you mean ‘[01m[Kgripper_move_group_[m[K’?
+  270 |           [01;31m[Kgripper_move_result[m[K == moveit::core::MoveItErrorCode::SUCCESS)
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |           [32m[Kgripper_move_group_[m[K
+gmake[2]: *** [CMakeFiles/task_server.dir/build.make:76: CMakeFiles/task_server.dir/src/task_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:142: CMakeFiles/task_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
